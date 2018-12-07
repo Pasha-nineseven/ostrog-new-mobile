@@ -491,7 +491,7 @@
 
 
 .transition{
-	margin: 40px 0 25px; 
+	margin: 37px 0 25px; 
 	display: flex;
 	justify-content:center;
 	align-items:center;
@@ -707,6 +707,179 @@
 		margin-bottom: 2px;
 	}
 }
+
+// .game{
+// 	padding-top: 9px;
+// }
+
+.game-item {
+    padding: 0 11px 0;
+        margin-bottom: 8px;
+    background: #fff;
+}
+
+.game-top{
+	    padding: 23px 16px 15px 16px;
+}
+
+.game-top__links{
+	display: flex;
+	align-items: center;
+}
+
+.game-top__item{
+	//margin-right: 25px;
+	&:after{
+		content: "/";
+		display: inline-block;
+		color: #909090;
+		font-size: 18px;
+		margin: 0 8px 0 4px;
+	}
+	&:last-child{
+		margin-right: 0;
+		&:after{
+			display: none;
+		}
+	}
+	a{
+		color: #007FE4;
+		font-size: 24px;
+		font-weight: 500;
+	}
+	h1{
+		margin-bottom: 0;
+		margin-top: -5px;
+	}
+
+}
+
+
+
+.game-item__inner{
+	background: #fff;
+	//padding: 8px 16px 16px;
+	height: 100%;
+}
+
+
+.game-link{
+	color: inherit;
+	display: block;
+	text-decoration: none;
+}
+
+.game-info{
+	padding: 7px 0px 22px;
+}
+
+.game-img{
+	overflow: hidden;
+	height: 180px;
+	margin: 0 -11px 10px;
+	position: relative;
+}
+
+.game-img__inner{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease-in-out;
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.game-platform{
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #909090;
+}
+.game-date{
+	font-size: 13px;
+	color: #909090;
+	span{
+		color: #333;
+		    margin-right: 3px;
+	}
+}
+
+.game-title{
+	padding-right: 77px;
+	position: relative;
+	margin-bottom: 9px;
+	.rating{
+	    position: absolute;
+	    right: 12px;
+	    top: -3px;
+	    width: 44px;
+	    height: 36px;
+	    line-height: 36px;
+	    font-size: 24px;
+
+	}
+}
+
+.game-title__txt{
+	font-size: 18px;
+	line-height: 1.2;
+	font-weight: 500;
+}
+
+.game-txt{
+    font-size: 16px;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+
+.rating-8, .rating-9, .rating-10 {
+  background-color: #7bba3a; }
+
+/****************rating 7-7.5**********************/
+.rating-7 {
+  background-color: #97c948; }
+
+/****************rating 6-6.5**********************/
+.rating-6 {
+  background-color: #b2d845; }
+
+/****************rating 5-5.5**********************/
+.rating-5 {
+  background-color: #dbeb40; }
+
+/****************rating 4-4.5**********************/
+.rating-4 {
+  background-color: #faeb3c; }
+
+/****************rating 3-3.5**********************/
+.rating-3 {
+  background-color: #ffd039; }
+
+/****************rating 2-2.5**********************/
+.rating-2 {
+  background-color: #ff9e38; }
+
+/****************rating 0-1.5**********************/
+.rating-0, .rating-1 {
+  background-color: #f65636; }
+
+.rating {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000; }
 
 @import "components/footer";
 

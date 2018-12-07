@@ -17,6 +17,30 @@ $(document).ready(function() {
     });
 
 
+    //PAGE-SEARCH
+    $('.page-search__input').keyup(function(){
+      var $this = $(this),
+      val = $this.val();
+      if(val.length >= 3){
+        $('.page-header__result').fadeIn(20);
+        $('body').addClass('hidden');
+        $('.page-header__search').addClass('active');
+      }else {
+        $('.page-header__result').fadeOut(20);
+        $('.page-header__search').removeClass('active');
+      }
+    });
+
+    $("body").on("click", ".open .header-search__button", function(){
+        $('.page-header__result').fadeOut(20);
+        $('body').removeClass('hidden');
+        $('.page-search__input').val("");
+        $('.page-header__search').removeClass('active');
+    })
+
+
+
+    //VIDEO
     $("body").on("click", ".video__play", function(e){
         $(this).hide();
 
