@@ -138,7 +138,7 @@ ol{
 		margin-bottom: 20px;
 		&:before{
 			counter-increment: myCounter;
-			content: counter(myCounter);
+			content: counter(myCounter)'.';
 			position: absolute;
 			left: 0;
 			top: 0;

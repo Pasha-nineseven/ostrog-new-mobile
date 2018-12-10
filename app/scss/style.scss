@@ -111,6 +111,7 @@
 	text-decoration: none;
 	color: #007FE4;
 	margin-bottom: 10px;
+	display: inline;
 }
 
 .article-top__date{
@@ -140,6 +141,7 @@
 
 	background: #FFF9E0;
 	padding-left: 3px;
+	padding-right: 3px;
 }
 
 .highlighted-single{
@@ -471,6 +473,8 @@
 	margin-right: 8px;
     padding: 7px 11px;
     margin-left: -12px;
+    text-decoration: none;
+    color: inherit;
 	&.green-scqeme{
 		background: #DCF6E1;
 	}

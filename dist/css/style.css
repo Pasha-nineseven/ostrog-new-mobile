@@ -3399,7 +3399,7 @@ ol {
     margin-bottom: 20px; }
     ol li:before {
       counter-increment: myCounter;
-      content: counter(myCounter);
+      content: counter(myCounter) ".";
       position: absolute;
       left: 0;
       top: 0;
@@ -4077,7 +4077,8 @@ hr {
 .article-top__author {
   text-decoration: none;
   color: #007FE4;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  display: inline; }
 
 .article-top__date {
   color: #909090;
@@ -4103,7 +4104,8 @@ hr {
 .highlighted {
   border: 1px solid #FBF3B1;
   background: #FFF9E0;
-  padding-left: 3px; }
+  padding-left: 3px;
+  padding-right: 3px; }
 
 .highlighted-single {
   border: 1px solid #F6E54A;
@@ -4385,7 +4387,9 @@ hr {
 .article__label {
   margin-right: 8px;
   padding: 7px 11px;
-  margin-left: -12px; }
+  margin-left: -12px;
+  text-decoration: none;
+  color: inherit; }
   .article__label.green-scqeme {
     background: #DCF6E1; }
   .article__label.yellow-scqeme {
