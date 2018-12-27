@@ -64,6 +64,9 @@ body {
 	&.hidden-scroll{
 		overflow: hidden;
 	}
+	&.fixed{
+		overflow: hidden;
+	}
 }
 
 textarea,input {

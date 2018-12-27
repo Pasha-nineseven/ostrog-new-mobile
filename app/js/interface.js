@@ -5,6 +5,7 @@ $(document).ready(function() {
         e.preventDefault();
         $(this).toggleClass('active');
         $('.menu').fadeToggle();
+        $('.contents').fadeToggle(0);
         $('body').toggleClass('hidden');
     });
 
@@ -89,6 +90,17 @@ $(document).ready(function() {
         }
     });
 
+
+
+    //CONTENTS
+    $("body").on("click", ".contents-inner__link", function(e){
+        e.preventDefault();
+        $('.contents-fonts').fadeToggle();
+        $(this).toggleClass('active');
+        $('.contents').toggleClass('active');
+        $('.contents-inner').toggleClass('active');
+        $('body').toggleClass('fixed');
+    });
     
 });
 
@@ -158,5 +170,6 @@ $('body').append(
         <li><a href="articles.html">Articles</a></li> \
         <li><a href="article.html">Article</a></li> \
         <li><a href="games.html">Games</a></li> \
+        <li><a href="game.html">Game</a></li> \
 	</ol> \
 </div>');
