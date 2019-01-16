@@ -69,7 +69,7 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
-    
+
     position: absolute;
     overflow: hidden;
     width: 100%;
@@ -172,7 +172,7 @@
 		max-width: 100%;
 		height: auto;
 		display: block;
-	} 
+	}
 }
 
 .highlighted-block{
@@ -225,7 +225,7 @@
     width: 100%;
     height: 100%;
     top: 0;
-    border: 0; 
+    border: 0;
     left: 0; }
 
 .video__poster {
@@ -365,7 +365,7 @@
 	margin-right: 7px;
 	font-weight: 300;
 }
-	
+
 .socials{
 	margin-bottom: 20px;
 	    display: flex;
@@ -506,7 +506,7 @@
 
 
 .transition{
-	margin: 37px 0 25px; 
+	margin: 37px 0 25px;
 	display: flex;
 	justify-content:center;
 	align-items:center;
@@ -1165,7 +1165,7 @@
 	.socials{
 		margin-bottom: 5px;
 	}
-	
+
 }
 
 .game-top-platform{
@@ -1298,7 +1298,7 @@
     top: 10px;
     width: 15px;
     height: 15px;
-    background: url(/images/svg/cookies-close.svg) no-repeat;
+    background: url(../img/svg/cookies-close.svg) no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
 }

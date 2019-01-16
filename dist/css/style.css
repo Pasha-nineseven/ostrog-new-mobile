@@ -5102,7 +5102,7 @@ hr {
   top: 10px;
   width: 15px;
   height: 15px;
-  background: url(/images/svg/cookies-close.svg) no-repeat;
+  background: url(../img/svg/cookies-close.svg) no-repeat;
   background-size: contain; }
 
 .page-footer {
