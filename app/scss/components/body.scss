@@ -196,16 +196,18 @@ table{
 	table-layout: fixed;
 	width: 100%;
 	font-size: 15px;
+	margin-bottom: 20px;
 	th{
 		text-align: left;
 		font-weight: 500;
 		border-top: 1px solid #AFBCC5;
 		border-bottom: 1px solid #AFBCC5;
-		    padding: 24px 0;
+		padding: 16px 0;
 	}
 	td{
-		border-bottom: 1px solid #AFBCC5;
-		    padding: 24px 0;
+		border-bottom: 1px solid #C9C9C9;
+		border-top: 1px solid #C9C9C9;
+		padding: 16px 0;
 	}
 	tr{
 		&:hover{

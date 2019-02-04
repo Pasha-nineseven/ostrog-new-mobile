@@ -3450,16 +3450,18 @@ input[type="password"] {
 table {
   table-layout: fixed;
   width: 100%;
-  font-size: 15px; }
+  font-size: 15px;
+  margin-bottom: 20px; }
   table th {
     text-align: left;
     font-weight: 500;
     border-top: 1px solid #AFBCC5;
     border-bottom: 1px solid #AFBCC5;
-    padding: 24px 0; }
+    padding: 16px 0; }
   table td {
-    border-bottom: 1px solid #AFBCC5;
-    padding: 24px 0; }
+    border-bottom: 1px solid #C9C9C9;
+    border-top: 1px solid #C9C9C9;
+    padding: 16px 0; }
   table tr:hover td {
     color: #003384; }
 
@@ -4246,7 +4248,28 @@ hr {
     height: auto;
     display: block; }
   .image-variants .media__title {
-    padding: 17px 0 17px; }
+    padding: 10px 0;
+    color: #909090; }
+
+.image-variants--title {
+  border-bottom: 0; }
+  .image-variants--title .image-variants__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .image-variants--title .image-variants__item {
+    position: relative; }
+    .image-variants--title .image-variants__item:after {
+      content: "";
+      display: inline-block;
+      width: -webkit-calc(100% - 8px);
+      width: calc(100% - 8px);
+      height: 1px;
+      background: #C9C9C9;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
 
 .image-variants__wrap {
   margin-right: -8px;
@@ -5104,6 +5127,26 @@ hr {
   height: 15px;
   background: url(../img/svg/cookies-close.svg) no-repeat;
   background-size: contain; }
+
+.table-game-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px; }
+  .table-game-item:last-child {
+    margin-bottom: 0; }
+
+.table-game-item__title {
+  font-weight: 500;
+  width: 50%; }
+
+.table-game-item__txt {
+  width: 50%; }
 
 .page-footer {
   background: #2b3033;
