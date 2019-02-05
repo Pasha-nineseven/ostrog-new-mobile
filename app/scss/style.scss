@@ -1343,6 +1343,93 @@
 	width: 50%;
 }
 
+.btn-google{
+	background: #4da176;
+    background: linear-gradient(90deg, #4da176 0%, #4cbe7b 100%);
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-bottom: 16px;
+    margin-right: 12px;
+    svg{
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		z-index: 3;
+		margin-top: -2px;
+    }
+}
+
+.btn-appstore{
+	margin-bottom: 16px;
+    margin-right: 12px;
+    background: #01172f;
+    background: linear-gradient(90deg, #01172f 0%, #001f30 100%);
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    svg{
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		z-index: 3;
+		margin-top: -2px;
+    }
+}
+
+.slider-wrapper{
+	margin: 0 -11px 20px;
+}
+
+.slider__img{
+	height: 180px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.slider__txt{
+	padding: 11px 0;
+	margin: 0 11px;
+	color: #909090;
+	font-size: 13px;
+	border-bottom: 1px solid #C9C9C9;
+}
+
+.slider{
+	display: none;
+	&.slick-initialized{
+		display: block;
+	}
+	.slick-arrow{
+		position: absolute;
+		top: 70px;
+		width: 48px;
+		height: 48px;
+		border: 0;
+		padding: 0;
+		display: inline-block;
+		text-indent: -9999em;
+		z-index: 1;
+		&.slick-next{
+			right: 15px;
+			background: url(../img/svg/arrow_right.svg) no-repeat;
+		}
+		&.slick-prev{
+			left: 15px;
+			background: url(../img/svg/arrow_left.svg) no-repeat;
+		}
+	}
+}
+
 @import "components/footer";
 
 

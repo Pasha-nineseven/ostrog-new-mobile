@@ -104,6 +104,23 @@ $(document).ready(function() {
         $('body').toggleClass('fixed');
     });
 
+
+    //MAIN SLIDER
+    if ($('.slider').length>0) {
+        $('.slider').slick({
+            // infinite: false,
+            slidesToShow: 1,
+            fade: true,
+            lazyLoad: 'progressive',
+            dots:false,
+            arrows: true,
+            useTransform:true,
+            equalizeHeight: false,
+            "accessibility": false,
+            adaptiveHeight: true,
+        });
+    }
+
 });
 
 

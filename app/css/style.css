@@ -3472,6 +3472,9 @@ hr {
   background: #C9C9C9;
   border: 0; }
 
+strong {
+  display: block; }
+
 .page-header {
   background: #024a9a;
   background: linear-gradient(91deg, #024a9a 0%, #00669e 100%);
@@ -5147,6 +5150,87 @@ hr {
 
 .table-game-item__txt {
   width: 50%; }
+
+.btn-google {
+  background: #4da176;
+  background: -webkit-gradient(linear, left top, right top, from(#4da176), to(#4cbe7b));
+  background: linear-gradient(90deg, #4da176 0%, #4cbe7b 100%);
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
+  margin-right: 12px; }
+  .btn-google svg {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 3;
+    margin-top: -2px; }
+
+.btn-appstore {
+  margin-bottom: 16px;
+  margin-right: 12px;
+  background: #01172f;
+  background: -webkit-gradient(linear, left top, right top, from(#01172f), to(#001f30));
+  background: linear-gradient(90deg, #01172f 0%, #001f30 100%);
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .btn-appstore svg {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 3;
+    margin-top: -2px; }
+
+.slider-wrapper {
+  margin: 0 -11px 20px; }
+
+.slider__img {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.slider__txt {
+  padding: 11px 0;
+  margin: 0 11px;
+  color: #909090;
+  font-size: 13px;
+  border-bottom: 1px solid #C9C9C9; }
+
+.slider {
+  display: none; }
+  .slider.slick-initialized {
+    display: block; }
+  .slider .slick-arrow {
+    position: absolute;
+    top: 70px;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    padding: 0;
+    display: inline-block;
+    text-indent: -9999em;
+    z-index: 1; }
+    .slider .slick-arrow.slick-next {
+      right: 15px;
+      background: url(../img/svg/arrow_right.svg) no-repeat; }
+    .slider .slick-arrow.slick-prev {
+      left: 15px;
+      background: url(../img/svg/arrow_left.svg) no-repeat; }
 
 .page-footer {
   background: #2b3033;
