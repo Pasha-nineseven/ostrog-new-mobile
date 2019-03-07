@@ -5235,6 +5235,13 @@ strong {
       left: 15px;
       background: url(../img/svg/arrow_left.svg) no-repeat; }
 
+.text-author {
+  font-size: 15px;
+  margin-bottom: 20px;
+  padding: 16px 0;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8; }
+
 .page-footer {
   background: #2b3033;
   background: -webkit-gradient(linear, left top, right top, from(#2b3033), to(#2a3433));
