@@ -4728,9 +4728,9 @@ strong {
 
 .game-date {
   font-size: 13px;
-  color: #909090; }
+  color: #333; }
   .game-date span {
-    color: #333;
+    color: #909090;
     margin-right: 3px; }
 
 .game-title {
