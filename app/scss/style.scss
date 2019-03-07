@@ -1095,10 +1095,10 @@
     -o-transition: max-height 1s ease, opacity 0.3s ease,padding 0.3s ease;
     -webkit-transition: max-height 1s ease, opacity 0.3s ease,padding 0.3s ease;
     transition: max-height 1s ease, opacity 0.3s ease,padding 0.3s ease;
-    font-size: 14px;
+    font-size: 15px;
     ol{
     	margin-bottom: 21px;
-    	font-size: 13px;
+    	font-size: 15px;
     	position: relative;
     	&:before{
 			content: "";
@@ -1130,7 +1130,7 @@
 				color: #8C8E8F;
     		}
     		a{
-    			color: #337ab7!important;
+    			    color: #224e94 !important;
     			text-decoration: none;
     			
     		}
@@ -1162,7 +1162,7 @@
 	display: block;
 	margin-bottom: 12px;
 	text-decoration: none;
-	color: #337ab7;
+	color: #224e94;
 }
 
 .level__title{

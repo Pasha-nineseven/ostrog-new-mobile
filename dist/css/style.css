@@ -4945,10 +4945,10 @@ strong {
   max-height: 0;
   -webkit-transition: max-height 1s ease, opacity 0.3s ease,padding 0.3s ease;
   transition: max-height 1s ease, opacity 0.3s ease,padding 0.3s ease;
-  font-size: 14px; }
+  font-size: 15px; }
   .contents__list ol {
     margin-bottom: 21px;
-    font-size: 13px;
+    font-size: 15px;
     position: relative; }
     .contents__list ol:before {
       content: "";
@@ -4977,7 +4977,7 @@ strong {
         top: -1px;
         color: #8C8E8F; }
       .contents__list ol li a {
-        color: #337ab7 !important;
+        color: #224e94 !important;
         text-decoration: none; }
       .contents__list ol li span.active {
         color: #000 !important; }
@@ -4999,7 +4999,7 @@ strong {
   display: block;
   margin-bottom: 12px;
   text-decoration: none;
-  color: #337ab7; }
+  color: #224e94; }
 
 .level__title {
   color: #000;
