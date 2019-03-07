@@ -4979,8 +4979,8 @@ strong {
       .contents__list ol li a {
         color: #337ab7 !important;
         text-decoration: none; }
-        .contents__list ol li a.active {
-          color: #000 !important; }
+      .contents__list ol li span.active {
+        color: #000 !important; }
 
 .contents__unit {
   padding-bottom: 150px;
