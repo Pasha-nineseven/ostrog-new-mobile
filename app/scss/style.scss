@@ -1407,6 +1407,10 @@
 	border-bottom: 1px solid #C9C9C9;
 }
 
+.slider__txt:empty{
+	display: none;
+}
+
 .slider{
 	display: none;
 	&.slick-initialized{
