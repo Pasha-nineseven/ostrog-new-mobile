@@ -1446,6 +1446,15 @@
 }
 
 
+a.article__img,
+a.article__link,
+a.menu__link{
+	transition: opacity 0.3s ease;
+	&:hover{
+		opacity: 0.5;
+	}
+}
+
 @import "components/footer";
 
 
