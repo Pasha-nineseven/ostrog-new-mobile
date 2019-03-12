@@ -44,3 +44,7 @@
     display: inline;
     background: #fff794;
 }
+
+.video-wrap .image-caption{
+    padding: 15px 11px;
+}
