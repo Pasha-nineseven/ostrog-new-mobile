@@ -3630,7 +3630,7 @@ strong {
   top: 100%;
   background: #fff;
   border: 1px solid #DADADA;
-  right: -16px;
+  right: -12px;
   margin-top: 9px;
   display: none;
   padding: 6px 10px;
@@ -3654,28 +3654,36 @@ strong {
   background: #fff; }
 
 .page-header-lang {
-  position: absolute;
-  cursor: pointer;
-  right: -17px;
-  top: 5px;
-  width: 7px;
-  height: 5px; }
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-left: 10px; }
 
 .page-header-lang__view .page-header-lang__icon {
   margin-right: 0; }
 
-.page-header-lang:after {
+.page-header-lang__view:after {
   content: "";
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 5px 3px 0 3px;
-  border-color: #ffffff transparent transparent transparent;
-  position: absolute; }
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  left: 5px;
+  top: 7px; }
 
 .page-header-lang__view {
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background: #003384;
+  position: relative; }
 
 .page-header-lang__view:hover {
   color: #BFC1C2; }
