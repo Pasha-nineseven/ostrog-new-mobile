@@ -1,0 +1,46 @@
+.socials__item {
+    padding: 6px 12px 6px 13px;
+}
+.socials__item--twi {
+    background: #1b95e0;
+}
+
+.socials__item span {
+    font-size: 13px;
+}
+
+.socials__item--twi i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 14px;
+    margin-top: -2px;
+}
+.text-author-name{
+    color: #003384;
+    text-decoration: none;
+}
+
+.material-top__title {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 0 75px 0px 13px;
+    margin-bottom: 19px;
+}
+
+.material-top__title h1{
+    margin-bottom: 0;;
+}
+.gamepage-block__date {
+    clear: both;
+}
+
+.highlighted-t {
+    display: inline;
+}
+.highlighted__inner {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: inline;
+    background: #fff794;
+}
