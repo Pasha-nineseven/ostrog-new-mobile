@@ -5260,6 +5260,54 @@ a.menu__link {
   a.menu__link:hover {
     opacity: 0.5; }
 
+.text-recommended {
+  background-color: #F0F0F0;
+  margin: 0 -11px -16px; }
+  .text-recommended .material-count:before {
+    content: "";
+    display: inline-block;
+    background: url(../img/svg/pyblikacii.svg) no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px; }
+
+.text-recommended-image {
+  margin-bottom: 10px; }
+  .text-recommended-image a {
+    display: block; }
+  .text-recommended-image img {
+    max-width: 100%;
+    height: auto; }
+
+.text-recommended-info {
+  padding: 15px 11px 5px 11px; }
+  .text-recommended-info .game-date {
+    margin-bottom: 10px;
+    color: #333; }
+    .text-recommended-info .game-date span {
+      color: #959595; }
+  .text-recommended-info .game-platform {
+    margin-bottom: 10px;
+    color: #333; }
+    .text-recommended-info .game-platform span {
+      color: #959595; }
+
+.text-recommended-title {
+  margin-bottom: 10px;
+  color: #003384;
+  line-height: 16.5px; }
+  .text-recommended-title a {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 600;
+    color: #003384;
+    line-height: 24px;
+    text-decoration: none; }
+
 .page-footer {
   background: #2b3033;
   background: -webkit-gradient(linear, left top, right top, from(#2b3033), to(#2a3433));

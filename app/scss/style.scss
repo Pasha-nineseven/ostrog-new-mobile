@@ -1463,6 +1463,66 @@ a.menu__link{
 	}
 }
 
+
+.text-recommended {
+    background-color: #F0F0F0;
+    //padding-bottom: 20px;
+    margin: 0 -11px -16px;
+    .material-count:before {
+	    content: "";
+	    display: inline-block;
+	    background: url(../img/svg/pyblikacii.svg) no-repeat;
+	    -webkit-background-size: cover;
+	    background-size: cover;
+	    width: 15px;
+	    height: 18px;
+	    position: absolute;
+	    left: 0;
+	    top: 50%;
+	    margin-top: -10px;
+	}
+}
+.text-recommended-image{
+	margin-bottom: 10px;
+	a{
+		display: block;
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+.text-recommended-info{
+	padding: 15px 11px 5px 11px;
+	.game-date{
+		margin-bottom: 10px;
+		color: #333;
+		span{
+			color: #959595;
+		}
+	}
+	.game-platform{
+		margin-bottom: 10px;
+		color: #333;
+		span{
+			color: #959595;
+		}
+	}
+}
+.text-recommended-title {
+    margin-bottom: 10px;
+    color: #003384;
+    line-height: 16.5px;
+    a{
+		font-size: 20px;
+		text-align: left;
+		font-weight: 600;
+		color: rgb(0,51,132);
+		line-height: 24px;
+		text-decoration: none;
+    }
+}
+
 @import "components/footer";
 
 
