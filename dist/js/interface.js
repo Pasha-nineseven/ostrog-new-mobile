@@ -108,40 +108,39 @@ $(document).ready(function() {
 
     //MAIN SLIDER
     if ($('.slider').length>0) {
-        var $slider = $('.slider');
+        $('.slider').each(function() {
+            var $slider = $(this);
 
-        var currentSlide;
-        var slidesCount;
-        var sliderCounter = $('.pagingInfo');
-        //sliderCounter.classList.add('slider__counter');
+            var currentSlide;
+            var slidesCount;
+            var sliderCounter = $slider.closest('.slider-wrapper').find('.pagingInfo');
 
-        var updateSliderCounter = function(slick, currentIndex) {
-            currentSlide = slick.slickCurrentSlide() + 1;
-            slidesCount = slick.slideCount;
-            $(sliderCounter).text([currentSlide, slidesCount].join(LANG === 'ru' ? ' из ' : ' of '));
-        };
+            var updateSliderCounter = function(slick, currentIndex) {
+                currentSlide = slick.slickCurrentSlide() + 1;
+                slidesCount = slick.slideCount;
+                $(sliderCounter).text([currentSlide, slidesCount].join(LANG === 'ru' ? ' из ' : ' of '));
+            };
 
-        $slider.on('init', function(event, slick) {
-            //$slider.append(sliderCounter);
-            updateSliderCounter(slick);
-        });
+            $slider.on('init', function(event, slick) {
+                updateSliderCounter(slick);
+            });
 
-        $slider.on('afterChange', function(event, slick, currentSlide) {
-            updateSliderCounter(slick, currentSlide);
-        });
+            $slider.on('afterChange', function(event, slick, currentSlide) {
+                updateSliderCounter(slick, currentSlide);
+            });
 
-        $slider.slick({
-            // infinite: false,
-            slidesToShow: 1,
-            fade: true,
-            lazyLoad: 'progressive',
-            dots:false,
-            arrows: true,
-            useTransform:true,
-            equalizeHeight: false,
-            "accessibility": false,
-            adaptiveHeight: true,
-            speed:10,
+            $slider.slick({
+                slidesToShow: 1,
+                fade: true,
+                lazyLoad: 'progressive',
+                dots:false,
+                arrows: true,
+                useTransform:true,
+                equalizeHeight: false,
+                "accessibility": false,
+                adaptiveHeight: true,
+                speed:10,
+            });
         });
     }
 
