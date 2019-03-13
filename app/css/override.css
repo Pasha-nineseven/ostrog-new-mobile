@@ -48,3 +48,7 @@
 .video-wrap .image-caption{
     padding: 15px 11px;
 }
+
+.page-browsing__left, .page-browsing__right {
+    max-width: 50%;
+}
