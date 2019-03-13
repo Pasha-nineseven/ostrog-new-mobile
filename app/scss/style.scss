@@ -1398,6 +1398,7 @@
 
 .slider-wrapper{
 	margin: 0 -11px 20px;
+	position: relative;
 }
 
 .slider__img{
@@ -1413,6 +1414,10 @@
 	color: #909090;
 	font-size: 13px;
 	border-bottom: 1px solid #C9C9C9;
+}
+
+.slider__txt:empty{
+	display: none;
 }
 
 .slider__txt:empty{
@@ -1522,6 +1527,44 @@ a.menu__link{
 		text-decoration: none;
     }
 }
+
+.pagingInfo {
+    position: absolute;
+    top: 154px;
+    color: #babbbc;
+    padding: 5px 12px;
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0.6);
+    left: 50%;
+    margin-left: -115px;
+    width: 62px;
+    white-space: nowrap;
+    z-index: 10;
+}
+.material-slider__link{
+	display: inline-block;
+    padding: 5px 13px 5px 27px;
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 154px;
+    left: 50%;
+    margin-left: -53px;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+    &:before{
+		content: "";
+		width: 12px;
+		height: 10px;
+		background: url(../img/svg/svg_open_original.svg) no-repeat;
+		position: absolute;
+		left: 8px;
+		top: 50%;
+		margin-top: -6px;
+    }
+}
+
 
 @import "components/footer";
 

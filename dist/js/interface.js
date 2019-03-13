@@ -107,7 +107,29 @@ $(document).ready(function() {
 
     //MAIN SLIDER
     if ($('.slider').length>0) {
-        $('.slider').slick({
+        var $slider = $('.slider');
+
+        var currentSlide;
+        var slidesCount;
+        var sliderCounter = $('.pagingInfo');
+        //sliderCounter.classList.add('slider__counter');
+          
+        var updateSliderCounter = function(slick, currentIndex) {
+            currentSlide = slick.slickCurrentSlide() + 1;
+            slidesCount = slick.slideCount;
+            $(sliderCounter).text(currentSlide + ' из ' +slidesCount)
+        };
+
+        $slider.on('init', function(event, slick) {
+            //$slider.append(sliderCounter);
+            updateSliderCounter(slick);
+        });
+
+        $slider.on('afterChange', function(event, slick, currentSlide) {
+            updateSliderCounter(slick, currentSlide);
+        });
+
+        $slider.slick({
             // infinite: false,
             slidesToShow: 1,
             fade: true,
@@ -118,6 +140,7 @@ $(document).ready(function() {
             equalizeHeight: false,
             "accessibility": false,
             adaptiveHeight: true,
+            speed:10,
         });
     }
 
