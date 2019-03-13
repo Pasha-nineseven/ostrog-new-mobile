@@ -52,3 +52,13 @@
 .page-browsing__left, .page-browsing__right {
     max-width: 50%;
 }
+
+.pagingInfo{
+    z-index: 3;
+}
+.material-slider-wrap--en .pagingInfo{
+    margin-left: -74px;
+}
+.material-slider-wrap--en .material-slider__link{
+    margin-left: -12px;
+}

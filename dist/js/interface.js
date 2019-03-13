@@ -1,6 +1,7 @@
 var IS_LOCAL_HTML = /.*\.html$/.test(window.location.href);
 
 $(document).ready(function() {
+    var LANG = $('html').attr('lang') ? $('html').attr('lang') : 'ru';
 	flexibility(document.documentElement);
     //TOP-MENU
 	$('body').on('click','.menu-btn', function(e){
@@ -113,11 +114,11 @@ $(document).ready(function() {
         var slidesCount;
         var sliderCounter = $('.pagingInfo');
         //sliderCounter.classList.add('slider__counter');
-          
+
         var updateSliderCounter = function(slick, currentIndex) {
             currentSlide = slick.slickCurrentSlide() + 1;
             slidesCount = slick.slideCount;
-            $(sliderCounter).text(currentSlide + ' из ' +slidesCount)
+            $(sliderCounter).text([currentSlide, slidesCount].join(LANG === 'ru' ? ' из ' : ' of '));
         };
 
         $slider.on('init', function(event, slick) {
