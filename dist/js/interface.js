@@ -103,6 +103,23 @@ $(document).ready(function() {
         $('.contents').toggleClass('active');
         $('.contents-inner').toggleClass('active');
         $('body').toggleClass('fixed');
+        if ($.scrollTo && $('.scroll-active').length>0) {
+            $('.contents__unit').scrollTo($('.contents__unit .scroll-active'));
+        }
+    });
+
+    $("body").on("click",".js-anchors__link", function (event) {
+        event.preventDefault();
+
+        $('.contents-inner__link').removeClass('active');
+        $('.contents-inner').removeClass('active');
+        $('.contents').removeClass('active');
+        $('body').removeClass('fixed');
+
+
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top - 37;
+        $('body,html').animate({scrollTop: top}, 100);
     });
 
 
