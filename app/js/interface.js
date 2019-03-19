@@ -18,6 +18,9 @@ $(document).ready(function() {
         $('.page-header-search').toggleClass('open');
         $('.page-search').toggleClass('open');
         $('body').toggleClass('hidden-scroll');
+        setTimeout(function () {
+            $('#searchMe').focus();
+        }, 100);
     });
 
 
