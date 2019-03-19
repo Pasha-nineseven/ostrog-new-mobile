@@ -62,3 +62,20 @@
 .material-slider-wrap--en .material-slider__link{
     margin-left: -12px;
 }
+.material-count span:before{
+    content: "";
+    display: inline-block;
+    background: url(../img/svg/pyblikacii-gr.svg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 15px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.material-count__icon {
+    display: none;
+}
