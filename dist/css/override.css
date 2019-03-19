@@ -17,7 +17,7 @@
     margin-top: -2px;
 }
 .text-author-name{
-    color: #003384;
+    color: #000;
     text-decoration: none;
 }
 
@@ -79,3 +79,27 @@
 .material-count__icon {
     display: none;
 }
+.result-item__link {
+    padding: 10px 40px 10px 10px;
+}
+.highlighted__inner {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+p .button{
+    margin-bottom: 0;
+}
+
+
+.page-search__header :focus::-webkit-input-placeholder {
+color: #187fd5; }
+
+.page-search__header :focus::-moz-placeholder {
+color: #187fd5; }
+
+.page-search__header :focus:-moz-placeholder {
+color: #187fd5; }
+
+.page-search__header :focus:-ms-input-placeholder {
+color: #187fd5; }
