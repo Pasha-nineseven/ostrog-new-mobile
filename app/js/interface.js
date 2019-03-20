@@ -2,7 +2,9 @@ var IS_LOCAL_HTML = /.*\.html$/.test(window.location.href);
 
 $(document).ready(function() {
     var LANG = $('html').attr('lang') ? $('html').attr('lang') : 'ru';
-	flexibility(document.documentElement);
+
+    flexibility(document.documentElement);
+
     //TOP-MENU
 	$('body').on('click','.menu-btn', function(e){
         e.preventDefault();
@@ -22,7 +24,6 @@ $(document).ready(function() {
             $('#searchMe').focus();
         }, 100);
     });
-
 
     //PAGE-SEARCH
     $('.page-search__input').keyup(function(){
@@ -45,8 +46,6 @@ $(document).ready(function() {
         $('.page-header__search').removeClass('active');
     })
 
-
-
     //VIDEO
     $("body").on("click", ".video__play", function(e){
         $(this).hide();
@@ -61,7 +60,6 @@ $(document).ready(function() {
 
         e.preventDefault();
     });
-
 
 	//LANGUAGE
 	$("body").on("click", ".page-header-lang", function(e){
@@ -78,9 +76,6 @@ $(document).ready(function() {
         }
     });
 
-
-
-
     //FOOTER-LANGUAGE
     $("body").on("click", ".page-footer-lang__view", function(e){
         if (!$(e.target).hasClass('page-header-lang__item')) {
@@ -95,8 +90,6 @@ $(document).ready(function() {
           $(".page-footer-lang__list").fadeOut(100);
         }
     });
-
-
 
     //CONTENTS
     $("body").on("click", ".contents-inner__link", function(e){
@@ -125,14 +118,20 @@ $(document).ready(function() {
         $('body,html').animate({scrollTop: top}, 100);
     });
 
+    var STATE_TOGGLE = false; // свернуто
     $("body").on("click",".js-gamepage-info__toggle", function (event) {
         event.preventDefault();
+        var $span = $(this).find('span');
         $('.gamepage-info__hidden').slideToggle();
-        $(this).find('span').text(function(i, text){
-            return text === "Развернуть" ? "Свернуть" : "Развернуть";
-        })
+        STATE_TOGGLE = !STATE_TOGGLE;
+        if (IS_LOCAL_HTML) {
+            $span.text(function(i, text){
+                return text === "Развернуть" ? "Свернуть" : "Развернуть";
+            })
+        } else {
+            $span.html(STATE_TOGGLE ? $span.data('label-hide') : $span.data('label-show'));
+        }
     });
-
 
     //MAIN SLIDER
     if ($('.slider').length>0) {
@@ -174,19 +173,11 @@ $(document).ready(function() {
 
 });
 
-
-
-
-$(window).resize(function () {
-
-});
-
-
 //HEADER-SCROLL
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = 87;
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = 87;
 
 $(window).scroll(function(event){
     didScroll = true;
@@ -215,15 +206,6 @@ function hasScrolled() {
     }
     lastScrollTop = st;
 }
-
-
-
-// $(window).load(function(){
-
-// });
-
-// functions
-
 
 // links pages
 if (IS_LOCAL_HTML) {
