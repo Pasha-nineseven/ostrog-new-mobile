@@ -5259,7 +5259,6 @@ a.article__link,
 a.menu__link {
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease; }
-  a.article__img:hover,
   a.article__link:hover,
   a.menu__link:hover {
     opacity: 0.5; }

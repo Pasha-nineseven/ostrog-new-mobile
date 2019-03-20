@@ -103,3 +103,128 @@ color: #187fd5; }
 
 .page-search__header :focus:-ms-input-placeholder {
 color: #187fd5; }
+
+.text-section-title{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.text-title-date-silver {
+    color: #000;
+    margin: -16px -11px 0 -11px;
+    background-color: #ebeef0;
+    padding: 6px 11px;
+    min-width: 100%;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+.text-title-date-silver .article-top__reviews {
+    margin-left: 6px;
+}
+.contents-inner.active + .contents__list {
+    padding-top: 25px;
+}
+
+.level__title.scroll-active{
+    font-weight: 500;
+}
+.level-2 ol{
+    font-size: 13px;
+}
+.contents__list ol li {
+    margin-bottom: 8px;
+}
+.contents__header {
+    padding: 0 0 10px;
+}
+.contents__title,
+.level__title,
+.level-2,
+.level-3,
+.contents__list ol,
+.contents__link{
+    margin-bottom: 10px;
+}
+.contents__list ol li:before{
+    left: 20px;
+}
+.contents__list ol:before {
+    left: 29px;
+}
+.list-game__title{
+    background-color: #333;
+    color: #fff;
+    padding: 12px 0;
+    margin-bottom: 20px;
+}
+.list-game__title h1{
+    margin-bottom: 0;
+}
+.game-item--similar{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.game-item--similar .game-img{
+    margin-bottom: 0;
+}
+.game-item--similar .game-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFF;
+    padding-left: 14px;
+    padding-right: 14px;
+    z-index: 2;
+    width: 100%;
+}
+.gamepage-similar-unit-image-filter {
+    border-radius: 2px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.game-item--similar .game-date {
+    color: #fff;
+}
+.game-item--similar .rating{
+    font-size: 20px;
+    right: 10px;
+}
+.game-item--similar .material-count{
+    color: #fff;
+}
+.game-item--similar .material-count:before {
+    content: "";
+    display: inline-block;
+    background: url(../img/svg/pyblikacii-gr.svg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 15px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+.game-item--card .material-count:before {
+    content: "";
+    display: inline-block;
+    background: url(../img/svg/pyblikacii.svg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 15px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+.material-top {
+    min-height: 226px;
+}
