@@ -125,6 +125,14 @@ $(document).ready(function() {
         $('body,html').animate({scrollTop: top}, 100);
     });
 
+    $("body").on("click",".js-gamepage-info__toggle", function (event) {
+        event.preventDefault();
+        $('.gamepage-info__hidden').slideToggle();
+        $(this).find('span').text(function(i, text){
+            return text === "Развернуть" ? "Свернуть" : "Развернуть";
+        })
+    });
+
 
     //MAIN SLIDER
     if ($('.slider').length>0) {

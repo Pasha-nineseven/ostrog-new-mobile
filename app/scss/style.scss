@@ -1565,6 +1565,21 @@ a.menu__link{
     }
 }
 
+.gamepage-info{
+	padding-bottom: 10px;
+}
+
+.gamepage-info__toggle{
+	display: block;
+	margin-bottom: 30px;
+	color: #23527c;
+	text-decoration: none;
+	margin-top: -20px;
+}
+
+.gamepage-info__hidden{
+	display: none;
+}
 
 @import "components/footer";
 

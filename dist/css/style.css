@@ -5347,6 +5347,19 @@ a.menu__link {
     top: 50%;
     margin-top: -6px; }
 
+.gamepage-info {
+  padding-bottom: 10px; }
+
+.gamepage-info__toggle {
+  display: block;
+  margin-bottom: 30px;
+  color: #23527c;
+  text-decoration: none;
+  margin-top: -20px; }
+
+.gamepage-info__hidden {
+  display: none; }
+
 .page-footer {
   background: #2b3033;
   background: -webkit-gradient(linear, left top, right top, from(#2b3033), to(#2a3433));
