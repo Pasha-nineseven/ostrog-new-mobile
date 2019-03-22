@@ -1580,6 +1580,19 @@ a.menu__link{
 	display: none;
 }
 
+ul.dots li:before,
+div.dots ul li:before{
+	content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -2px;
+    border-radius: 50%;
+    background: #000;
+    width: 4px;
+    height: 4px;
+}
+
 @import "components/footer";
 
 
