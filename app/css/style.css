@@ -4829,7 +4829,8 @@ strong {
   background: rgba(255, 255, 255, 0.8);
   -webkit-transition: none;
   transition: none;
-  border-top: 1px solid transparent; }
+  border-top: 1px solid transparent;
+  height: 36px; }
   .contents-inner.active {
     width: 100%;
     z-index: 5;
