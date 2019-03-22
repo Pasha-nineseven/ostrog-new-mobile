@@ -211,6 +211,7 @@ $(function () {
     var BASE_SELECTOR = '.page-content';
 
     var FONT_SIZE_MAP = {
+        '.h1-article-title': [20, 23, 27, 32],
         '.material-top__title, .list-game__title': [ 18, 20, 24, 28 ],
         '.text-section-title, .text-section-title p': [ 13, 15, 18, 21 ],
         'p, li, td, th': [ 13, 15, 18, 21 ],
@@ -278,6 +279,10 @@ $(function () {
             $(BASE_SELECTOR).find(key).css("font-size", nextSize);
             fontSizes[key] = nextSize;
         });
+        $('.slider').each(function() {
+            var $slider = $(this);
+            $slider.slick('resize');
+        });
         utils.store('fontSizes', fontSizes);
     });
 
@@ -290,6 +295,10 @@ $(function () {
             var prevSize = getPrevSize(key, currSize);
             $(BASE_SELECTOR).find(key).css("font-size", prevSize);
             fontSizes[key] = prevSize;
+        });
+        $('.slider').each(function() {
+            var $slider = $(this);
+            $slider.slick('resize');
         });
         utils.store('fontSizes', fontSizes);
     });
