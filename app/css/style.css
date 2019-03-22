@@ -3396,7 +3396,7 @@ ol {
   counter-reset: myCounter; }
   ol li {
     list-style-type: none;
-    padding-left: 30px;
+    padding-left: 22px;
     position: relative;
     margin-bottom: 20px; }
     ol li:before {
