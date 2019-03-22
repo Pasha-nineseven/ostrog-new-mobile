@@ -228,3 +228,11 @@ color: #187fd5; }
 .material-top {
     min-height: 226px;
 }
+
+.game-top-date, .game-top-platform {
+    font-size: 13px;
+}
+
+.game-top-platform {
+    color: #303435;
+}
