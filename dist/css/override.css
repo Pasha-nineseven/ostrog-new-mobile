@@ -241,3 +241,7 @@ color: #187fd5; }
     overflow-x: auto;
     max-width: 100%;
 }
+
+.gamepage-info {
+    word-break: break-word;
+}
