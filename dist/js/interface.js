@@ -214,7 +214,7 @@ $(function () {
         '.h1-article-title': [20, 23, 27, 32],
         '.material-top__title, .list-game__title': [ 18, 20, 24, 28 ],
         '.text-section-title, .text-section-title p': [ 13, 15, 18, 21 ],
-        'p, li, td, th': [ 13, 15, 18, 21 ],
+        'p, li, td, th, .gamepage-info__toggle': [ 13, 15, 18, 21 ],
         'h2':[ 18, 20, 24, 28 ],
         'h3, .game-title__txt': [ 16, 18, 21, 25 ],
         '.image-caption, .slider__txt, .game-top-date, .game-top-platform, .gamepage-block__title, .gamepage-block__subtitle, .gamepage-block__date, .gamepage-block__info-min, .game-date, .gamepage-block__tag': [ 11, 13, 15, 18 ],
