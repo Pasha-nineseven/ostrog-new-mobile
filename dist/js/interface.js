@@ -281,7 +281,7 @@ $(function () {
         });
         $('.slider').each(function() {
             var $slider = $(this);
-            $slider.slick('resize');
+            $slider.slick('reinit');
         });
         utils.store('fontSizes', fontSizes);
     });
@@ -298,7 +298,7 @@ $(function () {
         });
         $('.slider').each(function() {
             var $slider = $(this);
-            $slider.slick('resize');
+            $slider.slick('reinit');
         });
         utils.store('fontSizes', fontSizes);
     });
