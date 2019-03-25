@@ -237,3 +237,7 @@ color: #187fd5; }
     color: #303435;
 }
 
+.table-wrapper {
+    overflow-x: auto;
+    max-width: 100%;
+}
