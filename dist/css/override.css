@@ -276,3 +276,9 @@ color: #187fd5; }
 .slider__img {
     position: relative;
 }
+
+body.fixed {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}

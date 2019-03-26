@@ -3,7 +3,8 @@ var IS_LOCAL_HTML = /.*\.html$/.test(window.location.href);
 $(document).ready(function() {
     var LANG = $('html').attr('lang') ? $('html').attr('lang') : 'ru';
 
-    FastClick && FastClick.attach(document.body);
+    noframe('iframe');
+    // FastClick && FastClick.attach(document.body);
     flexibility(document.documentElement);
 
     //TOP-MENU
@@ -22,18 +23,18 @@ $(document).ready(function() {
         $('body').toggleClass('hidden-scroll');
         document.getElementById('searchMe').focus();
     };
-    document
-        .querySelector('.header-search__button')
-        .addEventListener('click', focusSearchInput, false);
-    // $("body").on("click", ".header-search__button", function(e){
-    //     e.preventDefault();
-    //     $('.page-header-search').toggleClass('open');
-    //     $('.page-search').toggleClass('open');
-    //     $('body').toggleClass('hidden-scroll');
-    //     setTimeout(function () {
-    //         $('#searchMe').focus();
-    //     }, 100);
-    // });
+    // document
+    //     .querySelector('.header-search__button')
+    //     .addEventListener('click', focusSearchInput, false);
+    $("body").on("click", ".header-search__button", function(e){
+        e.preventDefault();
+        $('.page-header-search').toggleClass('open');
+        $('.page-search').toggleClass('open');
+        $('body').toggleClass('hidden-scroll');
+        setTimeout(function () {
+            $('#searchMe').focus();
+        }, 400);
+    });
 
     //PAGE-SEARCH
     $('.page-search__input').keyup(function(){
