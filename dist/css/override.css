@@ -267,3 +267,7 @@ color: #187fd5; }
     padding-bottom: 0;
     border-bottom: none;
 }
+
+.layout--contents-fonts .content{
+    padding-top: 40px;
+}
