@@ -39,8 +39,8 @@
     display: inline;
 }
 .highlighted__inner {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    /* padding-top: 6px;
+    padding-bottom: 6px; */
     display: inline;
     background: #fff794;
 }
@@ -81,10 +81,6 @@
 }
 .result-item__link {
     padding: 10px 40px 10px 10px;
-}
-.highlighted__inner {
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
 
 p .button{
