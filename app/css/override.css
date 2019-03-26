@@ -262,3 +262,8 @@ color: #187fd5; }
     top: 125px!important;
     padding-top: 0;
 }
+
+.text-author{
+    padding-bottom: 0;
+    border-bottom: none;
+}
