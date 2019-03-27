@@ -3,7 +3,7 @@ var IS_LOCAL_HTML = /.*\.html$/.test(window.location.href);
 $(document).ready(function() {
     var LANG = $('html').attr('lang') ? $('html').attr('lang') : 'ru';
 
-    //noframe('iframe');
+    !IS_LOCAL_HTML && noframe('iframe');
     // FastClick && FastClick.attach(document.body);
     flexibility(document.documentElement);
 
@@ -17,18 +17,10 @@ $(document).ready(function() {
     });
 
     //TOP-SEARCH
-    var focusSearchInput = function () {
-        $('.page-header-search').toggleClass('open');
-        $('.page-search').toggleClass('open');
-        $('body').toggleClass('hidden-scroll');
-        document.getElementById('searchMe').focus();
-    };
-    
-    $(document).on('click', '.page-header:not(.open) #searchform-q', function () {
+    $(document).on('click', '.page-header:not(.open) #searchMe', function () {
         $('.header-search__button').click();
-
-        $('#searchform-q').val("");
-        $('#searchform-q').focus();
+        $('#searchMe').val("");
+        $('#searchMe').focus();
     });
 
     $("body").on("click", ".header-search__button", function(e){
