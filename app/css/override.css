@@ -282,3 +282,8 @@ body.fixed {
     position: fixed;
     width: 100%;
 }
+
+.result .highlighted {
+    padding-right: 0;
+    padding-left: 0;
+}
