@@ -3,7 +3,7 @@ var IS_LOCAL_HTML = /.*\.html$/.test(window.location.href);
 $(document).ready(function() {
     var LANG = $('html').attr('lang') ? $('html').attr('lang') : 'ru';
 
-    noframe('iframe');
+    //noframe('iframe');
     // FastClick && FastClick.attach(document.body);
     flexibility(document.documentElement);
 
@@ -23,12 +23,18 @@ $(document).ready(function() {
         $('body').toggleClass('hidden-scroll');
         document.getElementById('searchMe').focus();
     };
-    // document
-    //     .querySelector('.header-search__button')
-    //     .addEventListener('click', focusSearchInput, false);
+    
+    $(document).on('click', '.page-header:not(.open) #searchform-q', function () {
+        $('.header-search__button').click();
+
+        $('#searchform-q').val("");
+        $('#searchform-q').focus();
+    });
+
     $("body").on("click", ".header-search__button", function(e){
         e.preventDefault();
         $('.page-header-search').toggleClass('open');
+        $('.page-header').toggleClass('open');
         $('.page-search').toggleClass('open');
         $('body').toggleClass('hidden-scroll');
         setTimeout(function () {

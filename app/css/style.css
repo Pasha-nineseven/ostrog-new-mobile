@@ -3491,6 +3491,38 @@ strong {
     position: relative;
     z-index: 4;
     padding-left: 0; }
+  .page-header.open .page-search__input {
+    width: -webkit-calc(100% - 70px) !important;
+    width: calc(100% - 70px) !important;
+    left: 14px;
+    top: 10px;
+    margin-left: 0;
+    text-indent: inherit;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .page-header ::-webkit-input-placeholder {
+    color: #187fd5;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .page-header ::-moz-placeholder {
+    color: #187fd5;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .page-header :-moz-placeholder {
+    color: #187fd5;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .page-header :-ms-input-placeholder {
+    color: #187fd5;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .page-header :focus::-webkit-input-placeholder {
+    color: transparent; }
+  .page-header :focus::-moz-placeholder {
+    color: transparent; }
+  .page-header :focus:-moz-placeholder {
+    color: transparent; }
+  .page-header :focus:-ms-input-placeholder {
+    color: transparent; }
 
 .top-logo {
   display: -webkit-box;
@@ -3813,30 +3845,6 @@ strong {
   background-color: #003384;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(9, 142, 220, 0.25)), to(rgba(0, 255, 234, 0.25)));
   background-image: linear-gradient(to right, rgba(9, 142, 220, 0.25) 0%, rgba(0, 255, 234, 0.25) 100%); }
-  .page-search__header ::-webkit-input-placeholder {
-    color: #187fd5;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-  .page-search__header ::-moz-placeholder {
-    color: #187fd5;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-  .page-search__header :-moz-placeholder {
-    color: #187fd5;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-  .page-search__header :-ms-input-placeholder {
-    color: #187fd5;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-  .page-search__header :focus::-webkit-input-placeholder {
-    color: transparent; }
-  .page-search__header :focus::-moz-placeholder {
-    color: transparent; }
-  .page-search__header :focus:-moz-placeholder {
-    color: transparent; }
-  .page-search__header :focus:-ms-input-placeholder {
-    color: transparent; }
 
 .page-search__inner {
   padding: 10px 40px 1px 1px; }
@@ -3844,9 +3852,16 @@ strong {
 .page-search__input {
   color: #fff !important;
   border: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   background: transparent;
-  padding: 9px 5px 9px 6px; }
+  padding: 9px 5px 9px 6px;
+  z-index: 1001;
+  position: absolute;
+  width: 44px !important;
+  left: 100%;
+  margin-left: -54px;
+  top: 4px;
+  text-indent: -9999em;
+  border-bottom: 0; }
 
 .page-header__result {
   background: #404040;

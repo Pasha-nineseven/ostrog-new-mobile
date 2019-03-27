@@ -18,6 +18,28 @@
     	z-index: 4;
         padding-left: 0;
 	}
+    &.open{
+        .page-search__input{
+            width: calc(100% - 70px) !important;
+            left: 14px;
+            top: 10px;
+            margin-left: 0;
+            text-indent: inherit;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+
+     ::-webkit-input-placeholder {color:#187fd5;transition:all 0.3s ease;}
+    ::-moz-placeholder          {color:#187fd5;transition:all 0.3s ease;}
+    :-moz-placeholder           {color:#187fd5;transition:all 0.3s ease;}
+    :-ms-input-placeholder      {color:#187fd5;transition:all 0.3s ease;}
+
+
+
+    :focus::-webkit-input-placeholder {color: transparent}
+    :focus::-moz-placeholder          {color: transparent}
+    :focus:-moz-placeholder           {color: transparent}
+    :focus:-ms-input-placeholder      {color: transparent}
 }
 
 
@@ -356,17 +378,7 @@
     background-image: -o-linear-gradient(left, rgba(9, 142, 220, 0.25) 0%, rgba(0, 255, 234, 0.25) 100%);
     background-image: linear-gradient(to right, rgba(9, 142, 220, 0.25) 0%, rgba(0, 255, 234, 0.25) 100%);
 
-    ::-webkit-input-placeholder {color:#187fd5;transition:all 0.3s ease;}
-    ::-moz-placeholder          {color:#187fd5;transition:all 0.3s ease;}
-    :-moz-placeholder           {color:#187fd5;transition:all 0.3s ease;}
-    :-ms-input-placeholder      {color:#187fd5;transition:all 0.3s ease;}
-
-
-
-    :focus::-webkit-input-placeholder {color: transparent}
-    :focus::-moz-placeholder          {color: transparent}
-    :focus:-moz-placeholder           {color: transparent}
-    :focus:-ms-input-placeholder      {color: transparent}
+   
 }
 
 .page-search__inner{
@@ -376,9 +388,19 @@
 .page-search__input{
     color: #fff!important;
     border: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    
     background: transparent;
     padding: 9px 5px 9px 6px;
+
+
+    z-index: 1001;
+    position: absolute;
+    width: 44px!important;
+    left: 100%;
+    margin-left: -54px;
+    top: 4px;
+    text-indent: -9999em;
+    border-bottom: 0;
 }
 
 
