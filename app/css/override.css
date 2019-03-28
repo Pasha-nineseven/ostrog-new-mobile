@@ -319,3 +319,8 @@ ul li:before {
 table th, table td{
     padding: 16px 10px;
 }
+
+.js-reframe {
+    margin-bottom: 22px;
+    overflow: hidden;
+}
