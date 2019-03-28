@@ -288,7 +288,7 @@ body.fixed {
 }
 
 ul li:before {
-    top: 8px;
+    top: 10px;
 }
 
 .page-header ::-webkit-input-placeholder {
@@ -315,3 +315,7 @@ ul li:before {
     color: #187fd5; }
   .page-header :focus:-ms-input-placeholder {
     color: #187fd5 }
+
+table th, table td{
+    padding: 16px 10px;
+}
