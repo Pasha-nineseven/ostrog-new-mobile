@@ -3,7 +3,7 @@ var IS_LOCAL_HTML = /.*\.html$/.test(window.location.href);
 $(document).ready(function() {
     var LANG = $('html').attr('lang') ? $('html').attr('lang') : 'ru';
 
-    !IS_LOCAL_HTML && reframe('iframe');
+    !IS_LOCAL_HTML && reframe(document.querySelectorAll('.content > iframe'));
     flexibility(document.documentElement);
 
     //TOP-MENU
