@@ -108,6 +108,7 @@ $(document).ready(function() {
         $('.contents').toggleClass('active');
         $('.contents-inner').toggleClass('active');
         $('body').toggleClass('fixed');
+        $('html').toggleClass('fixed');
         if ($.scrollTo && $('.scroll-active').length>0) {
             $('.contents__unit').scrollTo($('.contents__unit .scroll-active'));
         }

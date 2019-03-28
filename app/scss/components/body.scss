@@ -69,6 +69,11 @@ body {
 	}
 }
 
+body.fixed, html.fixed {
+    overflow: hidden;
+    position: fixed;
+}
+
 textarea,input {
 	box-shadow: none;
 	font-family: inherit;

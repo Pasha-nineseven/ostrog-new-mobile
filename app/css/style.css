@@ -3311,6 +3311,10 @@ body {
   body.fixed {
     overflow: hidden; }
 
+body.fixed, html.fixed {
+  overflow: hidden;
+  position: fixed; }
+
 textarea, input {
   -webkit-box-shadow: none;
           box-shadow: none;
