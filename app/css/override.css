@@ -324,3 +324,13 @@ table th, table td{
     margin-bottom: 22px;
     overflow: hidden;
 }
+.cookies {
+    min-height: 73px;
+}
+
+.socials__item {
+    margin-right: 6px;
+}
+.socials__item:last-child{
+    margin-right: 0;
+}
