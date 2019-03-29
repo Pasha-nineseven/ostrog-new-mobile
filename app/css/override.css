@@ -198,7 +198,7 @@ color: #187fd5; }
 .game-item--similar .material-count:before {
     content: "";
     display: inline-block;
-    background: url(../img/svg/pyblikacii-gr.svg) no-repeat;
+    background: url(../img/svg/pyblikacii.svg) no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     width: 15px;
