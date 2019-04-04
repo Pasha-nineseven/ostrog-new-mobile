@@ -3,7 +3,7 @@ var IS_LOCAL_HTML = /.*\.html$/.test(window.location.href);
 $(document).ready(function() {
     var LANG = $('html').attr('lang') ? $('html').attr('lang') : 'ru';
 
-    //!IS_LOCAL_HTML && reframe(document.querySelectorAll('.content > iframe'));
+    !IS_LOCAL_HTML && reframe(document.querySelectorAll('.content > iframe'));
     flexibility(document.documentElement);
 
     //TOP-MENU
@@ -123,13 +123,8 @@ $(document).ready(function() {
         if ($.scrollTo && $('.scroll-active').length>0) {
             $('.contents__unit').scrollTo($('.contents__unit .scroll-active'));
         }
-
-        setTimeout(function () {
-            $('.page-header').removeClass('nav-up');
-            $('.page-header').removeClass('nav-down');
-            //$('#searchMe').focus();
-        }, 400);
-       // alert(1);
+        $('.page-header').removeClass('nav-up');
+        $('.page-header').removeClass('nav-down');
     });
 
     $("body").on("click",".js-anchors__link", function (event) {

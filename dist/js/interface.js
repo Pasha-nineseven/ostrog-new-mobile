@@ -108,7 +108,10 @@ $(document).ready(function() {
         $('.contents-inner').toggleClass('active');
 
         if ($('.contents-inner').hasClass('active')) {
-            $.scrollLock( true );
+            setTimeout(function () {
+                //$('#searchMe').focus();
+                $.scrollLock( true );
+            }, 400);
          
         } else {
             $.scrollLock( false );
@@ -120,13 +123,8 @@ $(document).ready(function() {
         if ($.scrollTo && $('.scroll-active').length>0) {
             $('.contents__unit').scrollTo($('.contents__unit .scroll-active'));
         }
-
-        setTimeout(function () {
-            $('.page-header').removeClass('nav-up');
-            $('.page-header').removeClass('nav-down');
-            //$('#searchMe').focus();
-        }, 400);
-       // alert(1);
+        $('.page-header').removeClass('nav-up');
+        $('.page-header').removeClass('nav-down');
     });
 
     $("body").on("click",".js-anchors__link", function (event) {
