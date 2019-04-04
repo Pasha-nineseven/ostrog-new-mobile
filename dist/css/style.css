@@ -5013,8 +5013,20 @@ strong {
   padding-bottom: 150px;
   max-height: -webkit-calc(100vh - 51px);
   max-height: calc(100vh - 51px);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch; }
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch !important; }
+  .contents__unit:before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: -99999;
+    top: 0px;
+    left: 0px;
+    bottom: -1px;
+    right: 0px; }
+
+.contents__item-category {
+  -webkit-overflow-scrolling: touch !important; }
 
 .contents__title {
   margin-bottom: 12px;

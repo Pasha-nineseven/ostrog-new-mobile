@@ -3363,28 +3363,28 @@ h1 {
 
 h2 {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 5px;
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.2; }
+  line-height: 1.1; }
 
 h3 {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
   font-size: 15px;
   font-weight: 500;
-  line-height: 1.2; }
+  line-height: 1.1; }
 
 h4 {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 5px;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.2; }
+  line-height: 1.1; }
 
 h5 {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 5px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2; }
@@ -4442,8 +4442,6 @@ strong {
   margin-bottom: 8px;
   background: #fff;
   padding: 9px 12px 0; }
-  .article h2 {
-    margin-bottom: 9px; }
 
 .article__link {
   color: inherit;
@@ -5015,8 +5013,20 @@ strong {
   padding-bottom: 150px;
   max-height: -webkit-calc(100vh - 51px);
   max-height: calc(100vh - 51px);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch; }
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch !important; }
+  .contents__unit:before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: -99999;
+    top: 0px;
+    left: 0px;
+    bottom: -1px;
+    right: 0px; }
+
+.contents__item-category {
+  -webkit-overflow-scrolling: touch !important; }
 
 .contents__title {
   margin-bottom: 12px;
