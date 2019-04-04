@@ -334,3 +334,8 @@ table th, table td{
 .socials__item:last-child{
     margin-right: 0;
 }
+
+.game-download-list {
+    width: auto;
+    padding: 0 10px;
+}
