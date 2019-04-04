@@ -1152,23 +1152,15 @@
 .contents__unit {
     padding-bottom: 150px;
     max-height: calc(100vh - 51px);
-    overflow-y: scroll;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch !important;
-    &:before {
-		display: block;
-		content: "";
-		position: absolute;
-		z-index: -99999;
-		top: 0px;
-		left: 0px;
-		bottom: -1px;
-		right: 0px;
-	}
 }
 
 .contents__item-category{
 	-webkit-overflow-scrolling: touch !important;
 }
+
+.contents__unit > * { -webkit-transform: translateZ(0px); }
 
 .contents__title{
 	margin-bottom: 12px;
