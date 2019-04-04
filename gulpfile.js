@@ -29,6 +29,7 @@ gulp.task('scripts', function(){
         'app/libs/modernizr/modernizr.min.js',
         'app/libs/flexibility/flexibility.js',
         'app/libs/slick/slick.min.js',
+        'app/libs/scrollock/jquery.scrollLock.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
