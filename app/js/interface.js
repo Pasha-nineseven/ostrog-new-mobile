@@ -128,11 +128,12 @@ $(document).ready(function() {
 
   $("body").on("click", ".js-anchors__link", function(event) {
     event.preventDefault();
-
+    $.scrollLock(false);
     $(".contents-inner__link").removeClass("active");
     $(".contents-inner").removeClass("active");
     $(".contents").removeClass("active");
     $("body").removeClass("fixed");
+    $("html").removeClass("fixed");
 
     var id = $(this).attr("href"),
       top = $(id).offset().top - 37;
