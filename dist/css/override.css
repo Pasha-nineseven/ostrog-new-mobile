@@ -347,3 +347,17 @@ table th, table td{
 .top-logo {
     margin-left: -30px;
 }
+.page-footer__link {
+    margin-right: 0;
+    display: block;
+    margin-bottom: 10px;
+}
+.page-footer__link:last-child{
+    margin-bottom: 0;
+}
+.page-footer__link:not(:first-child):before {
+    display: none;
+}
+.page-footer__bottom {
+    padding-top: 25px;
+}
