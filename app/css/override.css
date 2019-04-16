@@ -343,3 +343,7 @@ table th, table td{
 .reddit-embed {
     margin-bottom: 22px;
 }
+
+.top-logo {
+    margin-left: -30px;
+}
