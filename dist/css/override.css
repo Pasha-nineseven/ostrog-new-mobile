@@ -361,3 +361,6 @@ table th, table td{
 .page-footer__bottom {
     padding-top: 25px;
 }
+.image-caption {
+    word-break: break-word;
+}
