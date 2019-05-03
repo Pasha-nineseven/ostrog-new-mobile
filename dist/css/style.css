@@ -3292,7 +3292,7 @@ a[href]:not([class]), a.embedly-card {
   -webkit-transition: color 0.2s linear;
   transition: color 0.2s linear;
   text-decoration: none; }
-  a[href]:not([class]):hover {
+  a[href]:not([class]):hover, a.embedly-card:hover {
     color: #0565BA; }
 
 body {
@@ -3300,7 +3300,7 @@ body {
   height: 100%;
   background: #F0F0F0;
   -webkit-font-smoothing: antialiased;
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Rubik", Arial, sans-serif;
   color: #303435;
   line-height: 1.3; }
