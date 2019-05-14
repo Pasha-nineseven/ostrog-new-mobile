@@ -375,3 +375,16 @@ table th, table td{
 .bottom-logo {
     background: url(../img/svg/bottom_logo_new.svg) center no-repeat;
 }
+
+.paging-fullwidth .paging__wrap{
+    padding: 0 8px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.paging-fullwidth .paging__link{
+    flex-grow: 1;
+}
