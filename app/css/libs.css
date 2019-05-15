@@ -281,7 +281,8 @@ img.rsImg {
   background-color: #FFF;
   background-color: rgba(255, 255, 255, 0.75);
   *background-color: #FFF;
-  border-radius: 2px; }
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
 
 .rsDefaultInv .rsArrowIcn:hover {
   background-color: rgba(255, 255, 255, 0.9); }
@@ -331,7 +332,8 @@ img.rsImg {
   display: block;
   width: 5px;
   height: 5px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   background: #BBB; }
 
 .rsDefaultInv .rsBullet.rsNavSelected span {
@@ -498,11 +500,15 @@ img.rsImg {
   *zoom: 1; }
 
 .rsDefaultInv .rsTab:first-child {
+  -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px; }
 
 .rsDefaultInv .rsTab:last-child {
+  -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border-right: 1px solid #cfcfcf; }
 
@@ -547,7 +553,8 @@ img.rsImg {
   background-color: #FFF;
   background-color: rgba(255, 255, 255, 0.75);
   *background-color: #FFF;
-  border-radius: 2px; }
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
 
 .rsDefaultInv .rsFullscreenIcn:hover {
   background-color: rgba(255, 255, 255, 0.9); }
@@ -572,6 +579,7 @@ img.rsImg {
   width: 64px;
   display: block;
   height: 64px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
   -webkit-transition: .3s;
   transition: .3s;
@@ -648,7 +656,8 @@ img.rsImg {
   padding: 2px 8px;
   width: auto;
   font-size: 12px;
-  border-radius: 2px; }
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
 
 /* Slider */
 .slick-slider {
