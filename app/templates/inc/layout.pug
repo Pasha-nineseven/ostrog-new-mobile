@@ -1,0 +1,12 @@
+doctype html
+html(lang='ru')
+    include head.html
+    body
+        include cookies.html
+        .layout.layout--cookie
+            include header.pug
+            include menu.html
+            .wrapper
+                block content
+            include footer.html
+        include scripts.html

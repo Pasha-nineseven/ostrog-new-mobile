@@ -1,4 +1,4 @@
-var IS_LOCAL_HTML = /.*\.html$/.test(window.location.href);
+var IS_LOCAL_HTML = window.location.hostname === 'localhost';
 
 $(document).ready(function() {
   var LANG = $("html").attr("lang") ? $("html").attr("lang") : "ru";
@@ -15,6 +15,12 @@ $(document).ready(function() {
     $(".contents").fadeToggle(0);
     $("body").toggleClass("hidden");
   });
+
+  $("body").on("click",".cookies .cookies__close, .cookies .btn", function (event) {
+    event.preventDefault();
+    $('.layout').removeClass('layout--cookie');
+    $('.cookies').remove();
+});
 
   //TOP-SEARCH
   $(document).on("click", ".page-header:not(.open) #searchMe", function() {
@@ -360,12 +366,11 @@ if (IS_LOCAL_HTML) {
             #pages li { margin: 0; } \
         </style> \
         <ol id="pages"> \
-            <li><a href="index.html">Index</a></li> \
-            <li><a href="about.html">About</a></li> \
-            <li><a href="articles.html">Articles</a></li> \
-            <li><a href="article.html">Article</a></li> \
-            <li><a href="games.html">Games</a></li> \
-            <li><a href="game.html">Game</a></li> \
+            <li><a href="index.html">Список новостей</a></li> \
+            <li><a href="games.html">Список игр</a></li> \
+            <li><a href="game.html">Игра</a></li> \
+            <li><a href="guide.html">Гайд</a></li> \
+            <li><a href="article.html">Статья</a></li> \
         </ol> \
     </div>'
   );
