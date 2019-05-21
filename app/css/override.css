@@ -388,3 +388,8 @@ table th, table td{
 .paging-fullwidth .paging__link{
     flex-grow: 1;
 }
+
+.slider__img {
+    background-size: cover;
+    background-position: center top;
+}
