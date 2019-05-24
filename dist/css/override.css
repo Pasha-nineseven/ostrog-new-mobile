@@ -365,13 +365,13 @@ table th, table td{
     word-break: break-word;
 }
 
-.top-logo__icon{
+/* .top-logo__icon{
     background: url(../img/svg/top_logo_new.svg) center no-repeat;
     width: 100px;
     height: 30px;
     -webkit-background-size:cover;
     background-size:cover;
-}
+} */
 .bottom-logo {
     background: url(../img/svg/bottom_logo_new.svg) center no-repeat;
 }
