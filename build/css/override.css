@@ -401,13 +401,13 @@ ul li:before {
     word-break: break-word;
 }
 
-.top-logo__icon{
+/* .top-logo__icon{
     background: url(../img/svg/top_logo_new.svg) center no-repeat;
     width: 100px;
     height: 30px;
     -webkit-background-size:cover;
     background-size:cover;
-}
+} */
 
 .paging-fullwidth .paging__wrap{
     padding: 0 8px;
@@ -420,4 +420,9 @@ ul li:before {
 
 .paging-fullwidth .paging__link{
     flex-grow: 1;
+}
+
+.slider__img {
+    background-size: cover;
+    background-position: center top;
 }

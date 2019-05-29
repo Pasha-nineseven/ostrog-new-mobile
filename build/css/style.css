@@ -351,8 +351,8 @@ strong {
   position: relative; }
 
 .top-logo__icon {
-  width: 92px;
-  height: 15px;
+  width: 135px;
+  height: 35px;
   background: url(../img/svg/top_logo.svg) center no-repeat;
   display: inline-block; }
 
@@ -1193,15 +1193,15 @@ strong {
   .paging__link.paging__link--prev {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    background: #fff url(../img/svg/p-prev.svg) center no-repeat; }
+    background: #fff url(../img/svg/p-first.svg) center no-repeat; }
     .paging__link.paging__link--prev:hover {
-      background: #007fe4 url(../img/svg/p-prev-h.svg) center no-repeat; }
+      background: #007fe4 url(../img/svg/p-first-h.svg) center no-repeat; }
   .paging__link.paging__link--next {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    background: #fff url(../img/svg/p-next.svg) center no-repeat; }
+    background: #fff url(../img/svg/p-last.svg) center no-repeat; }
     .paging__link.paging__link--next:hover {
-      background: #007fe4 url(../img/svg/p-next-h.svg) center no-repeat; }
+      background: #007fe4 url(../img/svg/p-last-h.svg) center no-repeat; }
 
 .page-title {
   background: #fff;
@@ -1724,7 +1724,7 @@ strong {
   position: relative; }
 
 .slider__img {
-  height: 240px;
+  height: 245px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat; }
@@ -1810,7 +1810,7 @@ a.menu__link {
 
 .pagingInfo {
   position: absolute;
-  top: 154px;
+  top: 217px;
   color: #babbbc;
   padding: 5px 12px;
   font-size: 13px;
@@ -1827,7 +1827,7 @@ a.menu__link {
   font-size: 13px;
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  top: 154px;
+  top: 217px;
   left: 50%;
   margin-left: -53px;
   z-index: 2;
