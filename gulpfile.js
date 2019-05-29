@@ -89,6 +89,7 @@ gulp.task('watch', ['browser-sync', 'sass', 'css-libs', 'scripts', 'pug', 'beaut
 });
 
 gulp.task('purge-css', function () {
+    del.sync('build');
     var buildCss = gulp
         .src('dist/css/*.css')
         .pipe(
