@@ -4,7 +4,7 @@ $(document).ready(function() {
   var LANG = $("html").attr("lang") ? $("html").attr("lang") : "ru";
 
   typeof reframe === "function" &&
-    reframe(document.querySelectorAll(".content > iframe"));
+    reframe(document.querySelectorAll(".content iframe"));
   flexibility(document.documentElement);
 
   //TOP-MENU
