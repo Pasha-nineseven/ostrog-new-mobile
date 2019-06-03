@@ -5381,6 +5381,10 @@ div.dots ul li:before {
   width: 4px;
   height: 4px; }
 
+.emojione {
+  display: inline-block;
+  vertical-align: bottom; }
+
 .page-footer {
   background: #2b3033;
   background: -webkit-gradient(linear, left top, right top, from(#2b3033), to(#2a3433));
