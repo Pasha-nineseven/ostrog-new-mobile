@@ -512,3 +512,7 @@ table th, table td{
     background-size: cover;
     background-position: center top;
 }
+
+.article__content .video-wrap:last-child{
+    margin-bottom: 50px;
+}

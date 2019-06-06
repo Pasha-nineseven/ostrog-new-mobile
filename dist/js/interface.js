@@ -5,6 +5,7 @@ $(document).ready(function() {
 
   typeof reframe === "function" &&
     reframe(document.querySelectorAll(".content iframe"));
+  $('p:empty').remove();
   flexibility(document.documentElement);
 
   //TOP-MENU
