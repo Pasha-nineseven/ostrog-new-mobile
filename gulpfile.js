@@ -88,7 +88,7 @@ gulp.task('watch', ['browser-sync', 'sass', 'css-libs', 'scripts', 'pug', 'beaut
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
-gulp.task('purge-css', function () {
+gulp.task('build', function () {
     del.sync('build');
     var buildCss = gulp
         .src('dist/css/*.css')
@@ -97,17 +97,22 @@ gulp.task('purge-css', function () {
                 content: ['dist/*.html']
             })
         )
+        .pipe(cssnano())
+        .pipe(concat('style.min.css'))
+        .pipe(gulp.dest('build/css'));
+    var buildCssDefer = gulp
+        .src('dist/css/*.css')
+        .pipe(cssnano())
+        .pipe(concat('style-defer.min.css'))
         .pipe(gulp.dest('build/css'));
     var buildJs = gulp.src('dist/js/**/*')
         .pipe(gulp.dest('build/js'))
-    var buildHtml = gulp.src('dist/*.html')
-        .pipe(gulp.dest('build'));
     var copyImg = gulp
         .src('dist/img/**/*')
         .pipe(gulp.dest('build/img'));
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'css-libs', 'scripts'], function () {
+gulp.task('dist', ['clean', 'img', 'sass', 'css-libs', 'scripts'], function () {
     var buildCss = gulp.src([
         'app/css/style.css',
         'app/css/libs.min.css',
