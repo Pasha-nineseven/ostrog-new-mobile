@@ -5324,7 +5324,7 @@ a.menu__link {
 
 .pagingInfo {
   position: absolute;
-  top: 217px;
+  top: 219px;
   color: #babbbc;
   padding: 5px 12px;
   font-size: 13px;
@@ -5341,7 +5341,7 @@ a.menu__link {
   font-size: 13px;
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  top: 217px;
+  top: 219px;
   left: 50%;
   margin-left: -53px;
   z-index: 2;
