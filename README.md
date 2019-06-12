@@ -1,5 +1,9 @@
 # [cbreaker.net](https://cbreaker.net/): мобильная версия
 
+##
+- `npx gulp dist`
+- `npx gulp build`
+
 ## 5 типов страниц
 
 * Страница игры - `game.html`
