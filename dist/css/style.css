@@ -3520,13 +3520,13 @@ strong {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
   .page-header :focus::-webkit-input-placeholder {
-    color: transparent; }
+    color: #187ed5; }
   .page-header :focus::-moz-placeholder {
-    color: transparent; }
+    color: #187ed5; }
   .page-header :focus:-moz-placeholder {
-    color: transparent; }
+    color: #187ed5; }
   .page-header :focus:-ms-input-placeholder {
-    color: transparent; }
+    color: #187ed5; }
 
 .top-logo {
   display: -webkit-box;

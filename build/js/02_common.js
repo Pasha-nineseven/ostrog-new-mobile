@@ -43,7 +43,6 @@ $(document).click(function (e) {
 $(document).on("click", ".page-header:not(.open) #searchMe", function () {
     $(".header-search__button").click();
     $("#searchMe").val("");
-    $("#searchMe").focus();
 });
 
 // Фокус в поле поиска
@@ -53,9 +52,7 @@ $("body").on("click", ".header-search__button", function (e) {
     $(".page-header").toggleClass("open");
     $(".page-search").toggleClass("open");
     $("body").toggleClass("hidden-scroll");
-    setTimeout(function () {
-        $("#searchMe").focus();
-    }, 400);
+    $("#searchMe").focus();
 });
 
 // Результаты поиска
@@ -77,6 +74,7 @@ $("body").on("click", ".open .header-search__button", function () {
     $(".page-header__result").fadeOut(20);
     $("body").removeClass("hidden");
     $(".page-search__input").val("");
+    $(".page-search__input").blur();
     $(".page-header__search").removeClass("active");
 });
 
