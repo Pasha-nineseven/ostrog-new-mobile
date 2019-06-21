@@ -38,7 +38,6 @@ gulp.task('sass', function () {
 
 gulp.task('scripts', function () {
     return gulp.src([
-        'app/libs/jquery/dist/jquery.min.js',
         'app/libs/modernizr/modernizr.min.js',
         'app/libs/flexibility/flexibility.js',
         'app/libs/slick/slick.min.js',

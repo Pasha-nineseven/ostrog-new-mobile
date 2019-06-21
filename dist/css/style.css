@@ -4204,7 +4204,6 @@ strong {
   margin: 0 -11px 25px; }
 
 .video__item {
-  height: 180px;
   width: 100%;
   position: relative; }
 
@@ -4215,6 +4214,9 @@ strong {
   top: 0;
   border: 0;
   left: 0; }
+
+.video__item .js-reframe {
+  margin-bottom: 0; }
 
 .video__poster {
   position: absolute;
