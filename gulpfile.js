@@ -3,6 +3,7 @@ var autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync'),
     cache = require('gulp-cache'),
     concat = require('gulp-concat'),
+    critical = require('critical'),
     cssnano = require('gulp-cssnano'),
     del = require('del'),
     gulp = require('gulp'),
@@ -31,21 +32,47 @@ gulp.task('beautify-html', ['pug'], function () {
 gulp.task('sass', function () {
     return gulp.src('app/scss/*.scss')
         .pipe(sass())
-        .pipe(autoprefixer(['last 15 versions']))
+        .pipe(autoprefixer(['last 5 versions']))
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({ stream: true }))
 });
 
+var scriptTask = function (src, dest, name) {
+    return gulp.src(src)
+        .pipe(concat(name))
+        .pipe(uglify())
+        .pipe(gulp.dest(dest));
+};
 gulp.task('scripts', function () {
-    return gulp.src([
+    var common = [
+        'app/libs/jquery/dist/jquery.min.js',
         'app/libs/modernizr/modernizr.min.js',
         'app/libs/flexibility/flexibility.js',
+        'app/scripts/01_variables.js',
+        'app/scripts/02_common.js'
+    ];
+    var widgets = [
         'app/libs/slick/slick.min.js',
+        'app/libs/reframe.js/reframe.min.js',
+        'app/scripts/03_widgets.js'
+    ];
+    var contents = [
+        'app/libs/jquery.scrollto/jquery.scrollTo.min.js',
         'app/libs/scrollock/jquery.scrollLock.js',
-    ])
-        .pipe(concat('libs.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('app/js'))
+        'app/scripts/04_contents.js'
+    ];
+    var fontSizeSel = [
+        'app/scripts/05_font.js'
+    ];
+    var pages = ['app/scripts/pages.js'];
+    
+    del.sync('app/js');
+    var indexJs = scriptTask(common, 'app/js', 'index.js'); 
+    var gamesJs = scriptTask(common, 'app/js', 'games.js');
+    var gameJs = scriptTask(common.concat(widgets, contents, fontSizeSel), 'app/js', 'game.js');
+    var guideJs = scriptTask(common.concat(widgets, contents, fontSizeSel), 'app/js', 'guide.js');
+    var articleJs = scriptTask(common.concat(widgets, fontSizeSel), 'app/js', 'article.js');
+    var pagesJs = scriptTask(pages, 'app/js', 'pages.js');
 });
 
 gulp.task('css-libs', ['sass'], function () {
@@ -88,27 +115,44 @@ gulp.task('watch', ['browser-sync', 'sass', 'css-libs', 'scripts', 'pug', 'beaut
 });
 
 gulp.task('build', function () {
-    del.sync('build');
-    var buildCss = gulp
-        .src('dist/css/*.css')
-        .pipe(
-            purgecss({
-                content: ['dist/*.html']
-            })
-        )
-        .pipe(cssnano())
-        .pipe(concat('style.min.css'))
-        .pipe(gulp.dest('build/css'));
-    var buildCssDefer = gulp
-        .src('dist/css/*.css')
-        .pipe(cssnano())
-        .pipe(concat('style-defer.min.css'))
-        .pipe(gulp.dest('build/css'));
-    var buildJs = gulp.src('dist/js/**/*')
-        .pipe(gulp.dest('build/js'))
-    var copyImg = gulp
-        .src('dist/img/**/*')
-        .pipe(gulp.dest('build/img'));
+    del(['build/**', '!build']).then(function () {
+        [
+            'index',
+            'games',
+            'game',
+            'guide',
+            'article'
+        ].forEach(function (name) {
+            critical.generate({
+                base: './',
+                src: `./dist/${name}.html`,
+                dest: `./build/css/${name}-inline.css`,
+                minify: true,
+                // inlineImages: true,
+                ignore: ['@font-face', '@charset', /(-moz-|-webkit-|-ms-)/, /url\(/]
+            });
+        });
+        var buildCss = gulp
+            .src('dist/css/*.css')
+            .pipe(
+                purgecss({
+                    content: ['dist/*.html']
+                })
+            )
+            .pipe(cssnano())
+            .pipe(concat('style.min.css'))
+            .pipe(gulp.dest('build/css'));
+        var buildCssDefer = gulp
+            .src('dist/css/*.css')
+            .pipe(cssnano())
+            .pipe(concat('style-defer.min.css'))
+            .pipe(gulp.dest('build/css'));
+        var buildJs = gulp.src('dist/js/**/*')
+            .pipe(gulp.dest('build/js'))
+        var copyImg = gulp
+            .src('dist/img/**/*')
+            .pipe(gulp.dest('build/img'));
+    });
 });
 
 gulp.task('dist', ['clean', 'img', 'sass', 'css-libs', 'scripts'], function () {
