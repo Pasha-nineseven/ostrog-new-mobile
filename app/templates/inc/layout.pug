@@ -9,4 +9,5 @@ html(lang='ru')
             .wrapper
                 block content
             include footer.html
-        include scripts.html
+        block scripts
+        script(src="js/pages.js")

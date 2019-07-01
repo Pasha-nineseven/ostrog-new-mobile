@@ -55,13 +55,11 @@
 .rsNav,
 .rsThumbsArrow {
   opacity: 1;
-  -webkit-transition: opacity 0.3s linear;
   transition: opacity 0.3s linear; }
 
 .rsHidden {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
   transition: visibility 0s linear 0.3s,opacity 0.3s linear; }
 
 .rsGCaption {
@@ -84,7 +82,6 @@
 
 .royalSlider .rsSlide.rsFakePreloader {
   opacity: 1 !important;
-  -webkit-transition: 0s;
   transition: 0s;
   display: none; }
 
@@ -176,7 +173,6 @@
 .rsVideoContainer.rsIOSVideo iframe,
 .rsVideoContainer.rsIOSVideo video,
 .rsVideoContainer.rsIOSVideo embed {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-right: 44px; }
 
@@ -492,7 +488,6 @@ img.rsImg {
   border-right: 1px solid #f5f5f5;
   text-decoration: none;
   background-color: #FFF;
-  -webkit-box-shadow: inset 1px 0 0 #fff;
   box-shadow: inset 1px 0 0 #fff;
   *display: inline;
   *zoom: 1; }
@@ -509,18 +504,15 @@ img.rsImg {
 .rsDefaultInv .rsTab:active {
   border: 1px solid #D9D9DD;
   background-color: #f4f4f4;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
-          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset; }
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset; }
 
 .rsDefaultInv .rsTab.rsNavSelected {
   color: #FFF;
   border: 1px solid #999;
   text-shadow: 1px 1px #838383;
-  -webkit-box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
-          box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
+  box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
   background: #ACACAC;
   background-image: -moz-llinear-gradient(top, #ACACAC, #BBB);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ACACAC), to(#BBB));
   background-image: linear-gradient(to bottom, #ACACAC, #BBB); }
 
 /***************
@@ -573,7 +565,6 @@ img.rsImg {
   display: block;
   height: 64px;
   border-radius: 4px;
-  -webkit-transition: .3s;
   transition: .3s;
   background: url(../img/content/rs-defau.png) no-repeat 0 -32px;
   background-color: #FFF;
@@ -654,8 +645,7 @@ img.rsImg {
 .slick-slider {
   position: relative;
   display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -682,7 +672,6 @@ img.rsImg {
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
