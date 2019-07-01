@@ -18,3 +18,10 @@ function debounce(func, wait) {
         }, wait);
     };
 };
+
+function hasClass(className, el) {
+    return el.classList.contains(className);
+};
+function removeClass(className, el) {
+    el.classList.remove(className);
+}
