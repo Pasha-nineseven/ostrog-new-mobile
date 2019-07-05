@@ -15,23 +15,31 @@
         }
         function createPlayer(you) {
             removeClass('embeddable', you);
-            new YT.Player(you, {
+            var parts = you.dataset.embed.split('?start=');
+            var videoId = parts[0],
+                start = parts[1];
+            var playerConfig = {
                 height: '315',
                 width: '560',
-                videoId: you.dataset.embed,
+                videoId: videoId,
                 events: {
                     'onReady': function (event) {
                         reframe(event.target.a);
                     },
                 }
-            });
+            };
+            if (start) {
+                playerConfig['playerVars'] = {};
+                playerConfig['playerVars']['start'] = start;
+            }
+            new YT.Player(you, playerConfig);
         }
         for (var i = 0; i < embeddable.length; i++) {
             if (!(hasClass('embeddable-youtube', embeddable[i]) || hasClass('embeddable-gfycat', embeddable[i]))) {
                 continue;
             }
             var srcThumb = !hasClass('embeddable-gfycat', embeddable[i])
-                ? "https://img.youtube.com/vi/" + embeddable[i].dataset.embed + "/sddefault.jpg"
+                ? "https://img.youtube.com/vi/" + embeddable[i].dataset.embed.split('?')[0] + "/sddefault.jpg"
                 : 'https://thumbs.gfycat.com/' + embeddable[i].dataset.embed + '-mobile.jpg'
                 ;
 
