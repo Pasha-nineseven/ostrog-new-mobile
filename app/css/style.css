@@ -4628,6 +4628,15 @@ a.menu__link {
 .gamepage-info__hidden {
   display: none; }
 
+ul.list-1 li:before {
+  top: 7px; }
+
+ul.list0 li:before {
+  top: 10px; }
+
+ul.list2 li:before {
+  top: 14px; }
+
 ul.dots li:before,
 div.dots ul li:before {
   content: "";
@@ -4641,7 +4650,7 @@ div.dots ul li:before {
 
 ul.dots.list-1 li:before,
 div.dots.list-1 ul li:before {
-  top: 5px; }
+  top: 6px; }
 
 ul.dots.list0 li:before,
 div.dots.list0 ul li:before {
