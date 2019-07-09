@@ -1605,13 +1605,32 @@ div.dots ul li:before{
     content: "";
     position: absolute;
     left: 5px;
-    top: 6px;
+    top: 7px;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: #000;
     width: 4px;
     height: 4px;
 }
+
+ul.dots.list-1 li:before,
+div.dots.list-1 ul li:before{
+    top: 5px;
+}
+
+ul.dots.list0 li:before,
+div.dots.list0 ul li:before{
+    top: 7px;
+}
+ul.dots.list1 li:before,
+div.dots.list1 ul li:before{
+    top: 9px;
+}
+ul.dots.list2 li:before,
+div.dots.list2 ul li:before{
+    top: 12px;
+}
+
 
 .emojione {
     display: inline-block;
