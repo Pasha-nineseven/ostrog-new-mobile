@@ -14,6 +14,7 @@
             18
         ]
     };
+    var UL_RANGE = ["list-1", "list0", "list1", "list2"];
     var currSize = 1; // 0..3
 
     function cb(inc) {
@@ -33,6 +34,7 @@
                     .find(key)
                     .css("font-size", nextSize);
             });
+            $("ul").removeClass(UL_RANGE.join(' ')).addClass(UL_RANGE[currSize]);
             $(".slider").each(function () {
                 $(this).slick("reinit");
             });
