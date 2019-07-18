@@ -1649,6 +1649,24 @@ div.dots.list2 ul li:before{
     vertical-align: bottom;
 }
 
+.img-item {
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+
+.img-item--centered{
+	display: flex;
+	align-items:center;
+	img{
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+	p{
+		margin-bottom: 0;
+	}
+}
+
+
 @import "components/footer";
 
 

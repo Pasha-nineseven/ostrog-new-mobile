@@ -4668,6 +4668,21 @@ div.dots.list2 ul li:before {
   display: inline-block;
   vertical-align: bottom; }
 
+.img-item {
+  margin-bottom: 26px;
+  overflow: hidden; }
+
+.img-item--centered {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .img-item--centered img {
+    margin-right: 20px;
+    margin-bottom: 0; }
+  .img-item--centered p {
+    margin-bottom: 0; }
+
 .page-footer {
   background: #2b3033;
   background: linear-gradient(90deg, #2b3033 0%, #2a3433 100%);
