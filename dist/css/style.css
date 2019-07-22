@@ -4680,7 +4680,7 @@ div.dots.list2 ul li:before {
   .img-item--centered img {
     margin-right: 20px;
     margin-bottom: 0; }
-  .img-item--centered p {
+  .img-item--centered p:last-child {
     margin-bottom: 0; }
 
 .page-footer {
@@ -5276,7 +5276,7 @@ table th, table td {
       flex-grow: 1; }
 
 .slider__img {
-  background-size: cover;
+  background-size: contain;
   background-position: center top; }
 
 .embeddable {
