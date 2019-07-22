@@ -440,5 +440,5 @@ table th, table td {
       flex-grow: 1; }
 
 .slider__img {
-  background-size: cover;
+  background-size: contain;
   background-position: center top; }
