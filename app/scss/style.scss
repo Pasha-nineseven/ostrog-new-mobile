@@ -1678,6 +1678,11 @@ div.dots.list2 ul li:before{
 
 .contents {
    z-index: 99;
+   padding-top: 0;
+   top: 52px;
+}
+.open+.contents{
+	    top: 68px;
 }
 .nav-up+.contents{
     top: -52px;
