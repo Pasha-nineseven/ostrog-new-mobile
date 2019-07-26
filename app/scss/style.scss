@@ -1676,6 +1676,14 @@ div.dots.list2 ul li:before{
 }
 
 
+.contents {
+   z-index: 99;
+}
+.nav-up+.contents{
+    top: -52px;
+}
+
+
 @import "components/footer";
 
 

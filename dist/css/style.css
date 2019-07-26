@@ -4479,10 +4479,12 @@ strong {
   position: relative; }
 
 .slider__img {
-  height: 245px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat; }
+  position: relative;
+  width: 100%;
+  text-align: center; }
+  .slider__img img {
+    display: block;
+    margin: 0 auto; }
 
 .slider__txt {
   padding: 11px 0;
@@ -4582,7 +4584,7 @@ a.menu__link {
 
 .pagingInfo {
   position: absolute;
-  top: 219px;
+  bottom: 0;
   color: #babbbc;
   padding: 5px 12px;
   font-size: 13px;
@@ -4599,7 +4601,7 @@ a.menu__link {
   font-size: 13px;
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  top: 219px;
+  bottom: 0;
   left: 50%;
   margin-left: -53px;
   z-index: 2;
@@ -4682,6 +4684,12 @@ div.dots.list2 ul li:before {
     margin-bottom: 0; }
   .img-item--centered p:last-child {
     margin-bottom: 0; }
+
+.contents {
+  z-index: 99; }
+
+.nav-up + .contents {
+  top: -52px; }
 
 .page-footer {
   background: #2b3033;

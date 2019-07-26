@@ -4685,6 +4685,12 @@ div.dots.list2 ul li:before {
   .img-item--centered p:last-child {
     margin-bottom: 0; }
 
+.contents {
+  z-index: 99; }
+
+.nav-up + .contents {
+  top: -52px; }
+
 .page-footer {
   background: #2b3033;
   background: linear-gradient(90deg, #2b3033 0%, #2a3433 100%);
