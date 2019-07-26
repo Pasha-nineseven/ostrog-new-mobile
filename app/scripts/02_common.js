@@ -1,6 +1,8 @@
 (function () {
     flexibility(document.documentElement);
-    
+
+    typeof reframe === "function" && reframe(document.querySelectorAll("iframe"));
+
     $('p:empty').remove();
 
     // Боковое меню
