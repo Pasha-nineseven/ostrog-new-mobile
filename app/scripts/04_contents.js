@@ -6,26 +6,33 @@
         $(this).toggleClass("active");
         $(".contents").toggleClass("active");
         $(".contents-inner").toggleClass("active");
+        $("body").toggleClass("hidden_s");
 
-        if ($(".contents-inner").hasClass("active")) {
-            setTimeout(function () {
-                //$('#searchMe').focus();
-                $.scrollLock(true);
-            }, 400);
-        } else {
-            $.scrollLock(false);
-        }
+        window.didScroll = false;
+
+        // if ($(".contents-inner").hasClass("active")) {
+        //     setTimeout(function () {
+        //         //$('#searchMe').focus();
+        //         $.scrollLock(true);
+        //     }, 400);
+        // } else {
+        //     $.scrollLock(false);
+        // }
 
         if ($.scrollTo && $(".scroll-active").length > 0) {
-            $(".contents__unit").scrollTo($(".contents__unit .scroll-active"));
+            $(".contents__list").scrollTo($(".contents__list .scroll-active"));
         }
         $(".page-header").removeClass("nav-up");
         $(".page-header").removeClass("nav-down");
+        setTimeout(function () {
+            $(".page-header").removeClass("nav-up");
+            $(".page-header").removeClass("nav-down");
+        }, 400);
     });
 
     $("body").on("click", ".js-anchors__link", function (event) {
         event.preventDefault();
-        $.scrollLock(false);
+        // $.scrollLock(false);
         $(".contents-inner__link").removeClass("active");
         $(".contents-inner").removeClass("active");
         $(".contents").removeClass("active");

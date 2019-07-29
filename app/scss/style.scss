@@ -1688,6 +1688,14 @@ div.dots.list2 ul li:before{
     top: -52px;
 }
 
+body.hidden_s {
+    overflow: hidden;
+}
+.layout--cookie .menu {
+    padding-top: 0!important;
+    top: 125px;
+}
+
 
 @import "components/footer";
 

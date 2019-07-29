@@ -2992,8 +2992,9 @@ strong {
   position: fixed;
   height: 100%;
   width: 100%;
-  padding-top: 52px;
-  z-index: 5;
+  padding-top: 0;
+  z-index: 999;
+  top: 51px;
   display: none; }
 
 .menu__list {
@@ -4693,6 +4694,13 @@ div.dots.list2 ul li:before {
 
 .nav-up + .contents {
   top: -52px; }
+
+body.hidden_s {
+  overflow: hidden; }
+
+.layout--cookie .menu {
+  padding-top: 0 !important;
+  top: 125px; }
 
 .page-footer {
   background: #2b3033;

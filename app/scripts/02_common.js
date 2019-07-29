@@ -10,6 +10,19 @@
         $(".menu").fadeToggle();
         $(".contents").fadeToggle(0);
         $("body").toggleClass("hidden");
+
+        window.didScroll = false;
+       
+
+        if ($(this).hasClass("active")) {
+            setTimeout(function () {
+                //$.scrollLock(true);
+                $(".page-header").removeClass("nav-up");
+                $(".page-header").removeClass("nav-down");
+            }, 400);
+        } else {
+            //$.scrollLock(false);
+        }
     });
 
     // Переключатель языка в хэдере
@@ -92,23 +105,24 @@
     });
 
     // Скролл
-    var didScroll;
+    window.didScroll;
     var lastScrollTop = 0;
     var delta = 5;
     var navbarHeight = 87;
 
     $(window).scroll(function(event) {
-    didScroll = true;
+    window.didScroll = true;
     });
 
     setInterval(function() {
-    if (didScroll) {
+    if (window.didScroll) {
         hasScrolled();
-        didScroll = false;
+        window.didScroll = false;
     }
     }, 250);
 
     function hasScrolled() {
+
     var st = $(this).scrollTop();
 
     if (Math.abs(lastScrollTop - st) <= delta) return;
