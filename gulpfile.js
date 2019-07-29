@@ -65,9 +65,9 @@ gulp.task('scripts', function () {
         'app/scripts/05_font.js'
     ];
     var pages = ['app/scripts/pages.js'];
-    
+
     del.sync('app/js');
-    var indexJs = scriptTask(common, 'app/js', 'index.js'); 
+    var indexJs = scriptTask(['app/libs/reframe.js/reframe.min.js'].concat(common), 'app/js', 'index.js');
     var gamesJs = scriptTask(common, 'app/js', 'games.js');
     var gameJs = scriptTask(common.concat(widgets, contents, fontSizeSel), 'app/js', 'game.js');
     var guideJs = scriptTask(common.concat(widgets, contents, fontSizeSel), 'app/js', 'guide.js');
