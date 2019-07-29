@@ -2883,7 +2883,7 @@ strong {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 6;
+  z-index: 100;
   transition: top 0.3s ease-in-out; }
   .page-header > .container-fluid {
     position: relative;
