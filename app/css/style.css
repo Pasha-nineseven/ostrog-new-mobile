@@ -4111,9 +4111,11 @@ strong {
   top: 0;
   width: 100%;
   padding-top: 52px;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  pointer-events: none; }
   .contents.active {
-    box-shadow: 0px 10px 19px -10px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0px 10px 19px -10px rgba(0, 0, 0, 0.5);
+    pointer-events: all; }
 
 .contents-wrapper {
   transition: all 0.3s ease;
@@ -4128,7 +4130,8 @@ strong {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  pointer-events: all; }
   .contents-inner.active {
     width: 100%;
     z-index: 5;
@@ -4703,10 +4706,6 @@ body.hidden_s {
 .layout--cookie .menu {
   padding-top: 0 !important;
   top: 125px; }
-
-.js-page-aside__sticky.is_stuck {
-  margin-top: 0 !important;
-  top: 56px !important; }
 
 .reddit-embed {
   margin-left: -16px;
