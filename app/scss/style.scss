@@ -1697,6 +1697,11 @@ body.hidden_s {
 }
 
 
+.js-page-aside__sticky.is_stuck {
+    margin-top: 0!important;
+    top: 56px!important;
+}
+
 @import "components/footer";
 
 
