@@ -4706,6 +4706,10 @@ body.hidden_s {
   margin-top: 0 !important;
   top: 56px !important; }
 
+.reddit-embed {
+  margin-left: -16px;
+  margin-right: -16px; }
+
 .page-footer {
   background: #2b3033;
   background: linear-gradient(90deg, #2b3033 0%, #2a3433 100%);
