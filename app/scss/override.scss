@@ -518,3 +518,7 @@ article .article__content li,
 article .article__content div:not([class]) {
     text-align: left !important;
 }
+
+.article__img img {
+    width: 100%;
+}
