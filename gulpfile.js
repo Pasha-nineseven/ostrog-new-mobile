@@ -48,6 +48,7 @@ gulp.task('scripts', function () {
         'app/libs/jquery/dist/jquery.min.js',
         'app/libs/modernizr/modernizr.min.js',
         'app/libs/flexibility/flexibility.js',
+        'app/libs/scrollock/jquery.scrollLock.js',
         'app/scripts/01_variables.js',
         'app/scripts/02_common.js'
     ];
@@ -58,7 +59,6 @@ gulp.task('scripts', function () {
     ];
     var contents = [
         'app/libs/jquery.scrollto/jquery.scrollTo.min.js',
-        'app/libs/scrollock/jquery.scrollLock.js',
         'app/scripts/04_contents.js'
     ];
     var fontSizeSel = [
