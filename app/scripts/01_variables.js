@@ -25,3 +25,12 @@ function hasClass(className, el) {
 function removeClass(className, el) {
     el.classList.remove(className);
 }
+
+
+window.addEventListener("pageshow", function(evt){
+        if(evt.persisted){
+        setTimeout(function(){
+            window.location.reload();
+        },10);
+    }
+}, false);
