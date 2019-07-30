@@ -52,6 +52,7 @@
         $(".contents-inner__link").removeClass("active");
         $(".contents-inner").removeClass("active");
         $(".contents").removeClass("active");
+        $("body").removeClass("hidden_s");
         $("body").removeClass("fixed");
         $("html").removeClass("fixed");
 
