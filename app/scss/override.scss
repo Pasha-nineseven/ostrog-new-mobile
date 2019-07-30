@@ -512,3 +512,9 @@ table th, table td{
     background-size: contain;
     background-position: center top;
 }
+
+article .article__content p,
+article .article__content li,
+article .article__content div:not([class]) {
+    text-align: left !important;
+}
