@@ -42,7 +42,13 @@
 
     $("body").on("click", ".js-anchors__link", function (event) {
         event.preventDefault();
-        // $.scrollLock(false);
+        $.scrollLock(false);
+        window.didScroll = true;
+        $(window).scroll(function(event) {
+            window.didScroll = true;
+        });
+        $('.contents-fonts').fadeIn();
+        $(".page-header").removeClass("fixed");
         $(".contents-inner__link").removeClass("active");
         $(".contents-inner").removeClass("active");
         $(".contents").removeClass("active");
