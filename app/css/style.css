@@ -2883,8 +2883,7 @@ strong {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 100;
-  transition: top 0.3s ease-in-out; }
+  z-index: 100; }
   .page-header > .container-fluid {
     position: relative;
     z-index: 4;
@@ -3359,6 +3358,18 @@ strong {
   left: 0px;
   height: 100%;
   width: 100%; }
+
+.page-header.fixed {
+  top: 0 !important; }
+
+.fixed + .contents {
+  top: 52px !important; }
+
+.layout--cookie .page-header.fixed {
+  top: 73px !important; }
+
+.layout--cookie .page-header.fixed + .contents {
+  top: 125px !important; }
 
 .layout {
   display: table;
@@ -4111,11 +4122,11 @@ strong {
   top: 0;
   width: 100%;
   padding-top: 52px;
-  transition: all 0.3s ease-in-out;
   pointer-events: none; }
   .contents.active {
     box-shadow: 0px 10px 19px -10px rgba(0, 0, 0, 0.5);
-    pointer-events: all; }
+    pointer-events: all;
+    height: 100vh; }
 
 .contents-wrapper {
   transition: all 0.3s ease;

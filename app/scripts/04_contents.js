@@ -7,17 +7,27 @@
         $(".contents").toggleClass("active");
         $(".contents-inner").toggleClass("active");
         $("body").toggleClass("hidden_s");
+        $(".page-header").toggleClass("fixed");
 
-        window.didScroll = false;
+        
 
-        // if ($(".contents-inner").hasClass("active")) {
-        //     setTimeout(function () {
-        //         //$('#searchMe').focus();
-        //         $.scrollLock(true);
-        //     }, 400);
-        // } else {
-        //     $.scrollLock(false);
-        // }
+        if ($(".contents-inner").hasClass("active")) {
+            window.didScroll = false;
+            $(window).scroll(function(event) {
+                window.didScroll = false;
+            });
+            $.scrollLock(true);
+            setTimeout(function () {
+                //$('#searchMe').focus();
+                $.scrollLock(true);
+            }, 40);
+        } else {
+            $.scrollLock(false);
+            window.didScroll = true;
+            $(window).scroll(function(event) {
+                window.didScroll = true;
+            });
+        }
 
         if ($.scrollTo && $(".scroll-active").length > 0) {
             $(".contents__list").scrollTo($(".contents__list .scroll-active"));

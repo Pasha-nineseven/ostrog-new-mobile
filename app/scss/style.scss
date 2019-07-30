@@ -944,14 +944,12 @@
     top: 0;
     width: 100%;
     padding-top: 52px;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    //transition: all 0.3s ease-in-out;
     pointer-events:none;
     &.active{
     	box-shadow: 0px 10px 19px -10px rgba(0,0,0,0.5);
     	pointer-events: all;
+    	    height: 100vh;
     }
 }
 
@@ -1687,7 +1685,7 @@ div.dots.list2 ul li:before{
    top: 52px;
 }
 .open+.contents{
-	    top: 68px;
+	top: 68px;
 }
 .nav-up+.contents{
     top: -52px;
