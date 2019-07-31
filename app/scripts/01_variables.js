@@ -28,9 +28,10 @@ function removeClass(className, el) {
 
 
 window.addEventListener("pageshow", function(evt){
-        if(evt.persisted){
-        setTimeout(function(){
-            window.location.reload();
-        },10);
+    if(evt.persisted){
+        window.location.reload();
     }
 }, false);
+if (!!window.performance && window.performance.navigation.type === 2) {
+    window.location.reload(); // reload whole page
+}
