@@ -3445,7 +3445,8 @@ strong {
 
 .content {
   background: #fff;
-  padding: 16px 11px; }
+  padding: 16px 11px;
+  overflow: hidden; }
 
 .article-top {
   font-size: 13px;
