@@ -58,6 +58,7 @@ body {
 	font-family: $default-font;
 	color: $base-color;
 	line-height: 1.3;
+	overflow-x: hidden; 
 	&.hidden{
 		overflow: hidden;
 	}

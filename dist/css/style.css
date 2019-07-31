@@ -2703,7 +2703,8 @@ body {
   font-size: 16px;
   font-family: "Rubik", Arial, sans-serif;
   color: #303435;
-  line-height: 1.3; }
+  line-height: 1.3;
+  overflow-x: hidden; }
   body.hidden {
     overflow: hidden; }
   body.hidden-scroll {
@@ -4713,7 +4714,7 @@ div.dots.list2 ul li:before {
   top: 68px; }
 
 .nav-up + .contents {
-  top: -52px; }
+  top: 0; }
 
 body.hidden_s {
   overflow: hidden; }
