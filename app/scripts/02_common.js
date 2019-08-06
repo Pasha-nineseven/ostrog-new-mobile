@@ -47,12 +47,14 @@
         if (!$(e.target).hasClass("page-header-lang__item")) {
             e.preventDefault();
         }
+        $('.page-footer-lang').toggleClass('active');
         $(".page-footer-lang__list").fadeToggle(100);
     });
     $(document).click(function (e) {
         var div = $(".page-footer-lang");
         if (!div.is(e.target) && div.has(e.target).length === 0) {
             $(".page-footer-lang__list").fadeOut(100);
+            $('.page-footer-lang').removeClass('active');
         }
     });
 
