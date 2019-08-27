@@ -200,6 +200,9 @@
     display: none;
     padding: 8px 10px 6px 23px;
     display: none;
+    &:hover{
+        background: rgba(255, 255, 255, 0.1);
+    }
 }
 
 

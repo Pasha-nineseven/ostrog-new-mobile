@@ -10,7 +10,7 @@
         e.preventDefault();
         $(this).toggleClass("active");
         $('.page-header').toggleClass("active");
-        $(".menu").fadeToggle();
+        $(".menu").fadeToggle(100);
         $(".contents").fadeToggle(0);
         $("body").toggleClass("hidden");
 

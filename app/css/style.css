@@ -3054,6 +3054,8 @@ strong {
   display: none;
   padding: 8px 10px 6px 23px;
   display: none; }
+  .page-header-lang__list:hover {
+    background: rgba(255, 255, 255, 0.1); }
 
 .page-header-lang__view {
   color: #fff;
