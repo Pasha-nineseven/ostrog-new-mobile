@@ -874,12 +874,12 @@
 	.rating{
 	    position: absolute;
 	    right: 12px;
-	    top: -3px;
+	        top: 50%;
 	    width: 44px;
 	    height: 36px;
 	    line-height: 36px;
 	    font-size: 24px;
-
+		transform: translateY(-50%);
 	}
 }
 

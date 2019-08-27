@@ -4142,11 +4142,13 @@ strong {
   .game-title .rating {
     position: absolute;
     right: 12px;
-    top: -3px;
+    top: 50%;
     width: 44px;
     height: 36px;
     line-height: 36px;
-    font-size: 24px; }
+    font-size: 24px;
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
 
 .game-title__txt {
   font-size: 18px;
