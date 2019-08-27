@@ -5026,6 +5026,11 @@ body.hidden_s {
   -ms-transform: rotate(0);
       transform: rotate(0); }
 
+@media screen and (max-width: 380px) {
+  .page-footer__copyright span {
+    padding: 0 1px 0 3px;
+    font-size: 11px; } }
+
 /* Картинки без подписей внутри p */
 img {
   max-width: 100% !important; }
