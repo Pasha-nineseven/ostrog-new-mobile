@@ -650,6 +650,7 @@
     height: 31px;
     background: url(../img/svg/letters.svg) no-repeat;
     text-decoration: none;
+    opacity: 0.6;
 }
 .contents-fonts__list{
     position: absolute;
@@ -660,7 +661,7 @@
     box-shadow: 0px 3px 9px rgba(0, 47, 94, 0.3);
     padding: 1px;
     border-radius: 4px;
-    margin-top: -5px;
+    margin-top: -1px;
     display: none;
     &:before{
         content: "";
@@ -678,5 +679,9 @@
 
 .contents-fonts__inner{
     display: flex;
-        padding: 10px 12px;
+        //padding: 10px 12px;
+}
+
+.nav-up .contents-fonts__list{
+    opacity: 0;
 }

@@ -1084,11 +1084,15 @@
 .contents-fonts__down {
     display: inline-block;
     vertical-align: middle;
-    width: 22px;
-    height: 12px;
-    background: url(../img/svg/up.svg) no-repeat;
-    margin-left: 12px;
-        margin-top: 5px;
+    width: 27px;
+    height: 17px;
+        background: url(../img/svg/up.svg) center 15px no-repeat;
+    padding: 10px;
+    box-sizing: content-box;
+    line-height: 1;
+    &:hover{
+    	background: rgba(255, 255, 255, 0.1) url(../img/svg/up.svg) center 15px no-repeat;
+    }
 }
 
 .contents-fonts__up {
@@ -1097,8 +1101,24 @@
     
     width: 27px;
     height: 17px;
-    background: url(../img/svg/down.svg) no-repeat;
-    margin-right: 8px;
+    background: url(../img/svg/down.svg) center no-repeat;
+    position: relative;
+    padding: 10px;
+    box-sizing: content-box;
+    line-height: 1;
+    &:hover{
+    	background: rgba(255, 255, 255, 0.1) url(../img/svg/down.svg) center no-repeat;
+    }
+    &:after{
+		content: "";
+		display: inline-block;
+		background: rgba(255, 255, 255, 0.2);
+		width: 1px;
+		height: calc(100% - 9px);
+		position: absolute;
+		right: -1px;
+		top: 4px;
+    }
 }
 
 
