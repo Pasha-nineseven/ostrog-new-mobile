@@ -9,7 +9,8 @@
     $("body").on("click", ".menu-btn", function (e) {
         e.preventDefault();
         $(this).toggleClass("active");
-        $(".menu").fadeToggle();
+        $('.page-header').toggleClass("active");
+        $(".menu").fadeToggle(100);
         $(".contents").fadeToggle(0);
         $("body").toggleClass("hidden");
 
@@ -28,31 +29,41 @@
         }
     });
 
+    $("body").on("click", ".contents-fonts__toggle", function (e) {
+        e.preventDefault();
+
+        $(".contents-fonts__list").slideToggle(100);
+    });
+
+
     // Переключатель языка в хэдере
-    $("body").on("click", ".page-header-lang", function (e) {
-        if (!$(e.target).hasClass("page-header-lang__item")) {
+    $("body").on("click", ".page-header-lang__view", function (e) {
+        //if (!$(e.target).hasClass("page-header-lang__item")) {
             e.preventDefault();
-        }
-        $(".page-header-lang__list").fadeToggle(100);
+            $(this).toggleClass('active');
+        //}
+        $(".page-header-lang__list").slideToggle(100);
     });
-    $(document).click(function (e) {
-        var div = $(".page-header-lang");
-        if (!div.is(e.target) && div.has(e.target).length === 0) {
-            $(".page-header-lang__list").fadeOut(100);
-        }
-    });
+    // $(document).click(function (e) {
+    //     var div = $(".page-header-lang");
+    //     if (!div.is(e.target) && div.has(e.target).length === 0) {
+    //         $(".page-header-lang__list").fadeOut(100);
+    //     }
+    // });
 
     // Переключатель языка в футере
     $("body").on("click", ".page-footer-lang__view", function (e) {
         if (!$(e.target).hasClass("page-header-lang__item")) {
             e.preventDefault();
         }
+        $('.page-footer-lang').toggleClass('active');
         $(".page-footer-lang__list").fadeToggle(100);
     });
     $(document).click(function (e) {
         var div = $(".page-footer-lang");
         if (!div.is(e.target) && div.has(e.target).length === 0) {
             $(".page-footer-lang__list").fadeOut(100);
+            $('.page-footer-lang').removeClass('active');
         }
     });
 

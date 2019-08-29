@@ -9,7 +9,10 @@
 
 
 //MEDIA
-@media screen and (max-width: 1400px){
-
+@media screen and (max-width: 380px){
+	.page-footer__copyright span {
+	    padding: 0 1px 0 3px;
+	    font-size: 11px;
+	}
 }
 

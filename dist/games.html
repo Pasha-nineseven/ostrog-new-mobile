@@ -28,18 +28,24 @@
         <header class="page-header">
             <div class="container-fluid">
                 <div class="page-header__wrap">
-                    <a href="#" class="menu-btn">
-                        <span class="burger-icon"></span>
-                    </a>
+                    <div class="page-header__inner">
+                        <a href="#" class="menu-btn">
+                            <span class="burger-icon"></span>
+                        </a>
+                        <div class="top-logo">
+                            <a href="/" class="top-logo__icon"></a>
+                        </div>
+                    </div>
                     <form action="#" method="get" autocomplete="off">
                         <input type="text" class="page-search__input" placeholder="Найти игру или статью" id="searchMe">
                     </form>
-                    <div class="top-logo">
-                        <a href="/" class="top-logo__icon"></a>
-                        <div class="page-header-lang">
-                            <a href="#" class="page-header-lang__view"></a>
-                            <div class="page-header-lang__list">
-                                <a class="page-header-lang__item" href="#"><i class="page-header-lang__icon"><img src="img/svg/en.svg" alt="English"></i>English</a></div>
+                    <div class="contents-fonts">
+                        <a href="#" class="contents-fonts__toggle"></a>
+                        <div class="contents-fonts__list">
+                            <div class="contents-fonts__inner">
+                                <a href="#" class="contents-fonts__up"></a>
+                                <a href="#" class="contents-fonts__down"></a>
+                            </div>
                         </div>
                     </div>
                     <div class="page-header-search">
@@ -332,29 +338,111 @@
         </header>
         <div class="menu">
             <div class="menu__list">
-                <div class="menu__item">
-                    <a class="menu__link active" href="#">
-                        Все </a></div>
-                <div class="menu__item">
-                    <a class="menu__link" href="#">
-                        Новости </a></div>
-                <div class="menu__item">
-                    <a class="menu__link" href="#">
-                        Статьи </a></div>
-                <div class="menu__item">
-                    <a class="menu__link" href="#">
-                        Прохождения </a></div>
-                <div class="menu__item">
-                    <div class="menu__title">Игры</div>
-                    <a class="menu__link" href="#">
-                        Популярные игры </a>
+                <div class="menu__wrap">
+                    <div class="menu__item">
+                        <a class="menu__link" href="#">
+                            <i class="menu__icon">
+                                <img src="img/svg/news.svg" alt="">
+                            </i>
+                            Новости
+                        </a>
+                    </div>
+                    <div class="menu__item">
+                        <a class="menu__link" href="#">
+                            <i class="menu__icon">
+                                <img src="img/svg/articles.svg" alt="">
+                            </i>
+                            Статьи
+                        </a>
+                    </div>
+                    <div class="menu__item">
+                        <a class="menu__link" href="#">
+                            <i class="menu__icon">
+                                <img src="img/svg/guides.svg" alt="">
+                            </i>
+                            Прохождения
+                        </a>
+                    </div>
                 </div>
-                <div class="menu__item">
-                    <a class="menu__link" href="#">
-                        Скоро выходят </a></div>
-                <div class="menu__item">
-                    <a class="menu__link" href="#">
-                        Лучшие игры всех времен </a></div>
+                <div class="menu__wrap">
+                    <div class="menu__item">
+                        <div class="menu__title">Игры</div>
+                        <a class="menu__link" href="#">
+                            <i class="menu__icon">
+                                <img src="img/svg/popular.svg" alt="">
+                            </i>
+                            Популярные
+                        </a>
+                    </div>
+                    <div class="menu__item">
+                        <a class="menu__link" href="#">
+                            <i class="menu__icon">
+                                <img src="img/svg/coming_soon.svg" alt="">
+                            </i>
+                            Скоро выходят
+                        </a>
+                    </div>
+                    <div class="menu__item">
+                        <a class="menu__link" href="#">
+                            <i class="menu__icon">
+                                <img src="img/svg/best_ever.svg" alt="">
+                            </i>
+                            Лучшие игры всех времен
+                        </a>
+                    </div>
+                </div>
+                <div class="page-header-lang">
+                    <a href="#" class="page-header-lang__view">
+                        <i class="page-header-lang__icon">
+                            <img src="img/svg/ru.svg" alt="Русский">
+                        </i>
+                        Русский
+                    </a>
+                    <div class="page-header-lang__list">
+                        <a class="page-header-lang__item" href="#">
+                            <i class="page-header-lang__icon">
+                                <img src="img/svg/en.svg" alt="English">
+                            </i>
+                            English
+                        </a>
+                    </div>
+                </div>
+                <div class="liked">
+                    <div class="liked__top">Игры, которые вам понравились</div>
+                    <div class="liked__item">
+                        <a href="#" class="liked__link">
+                            <div class="liked__icon">
+                                <img src="img/content/liked1.jpg" alt="">
+                            </div>
+                            <div class="liked__info">
+                                <div class="liked__title">Hustle Castle</div>
+                                <div class="liked__add">Role Playing</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="liked__item">
+                        <a href="#" class="liked__link">
+                            <div class="liked__icon">
+                                <img src="img/content/liked2.jpg" alt="">
+                            </div>
+                            <div class="liked__info">
+                                <div class="liked__title">Left to Survive</div>
+                                <div class="liked__add">Zombie Shooter</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="liked__item">
+                        <a href="#" class="liked__link">
+                            <div class="liked__icon">
+                                <img src="img/content/liked3.jpg" alt="">
+                            </div>
+                            <div class="liked__info">
+                                <div class="liked__title">Juggernaut Wars</div>
+                                <div class="liked__add">Action Rpg</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="wrapper">
@@ -1065,9 +1153,14 @@
                 </div>
             </div>
         </div>
-        <footer class="page-footer">
+        <footer class="page-footer page-footer--ru">
             <div class="container-fluid">
                 <div class="page-footer__wrap">
+                    <div class="page-footer__socials">
+                        <a href="#" class="soclals__item soclals__item--vk"></a>
+                        <a href="#" class="soclals__item soclals__item--tg"></a>
+                        <a href="#" class="soclals__item soclals__item--you"></a>
+                    </div>
                     <div class="page-footer__menu">
                         <a class="page-footer__link" href="#">
                             Контакты </a>
@@ -1075,24 +1168,91 @@
                             Пользовательское соглашение </a>
                         <a class="page-footer__link" href="#">
                             Политика конфиденциальности </a></div>
-                    <div class="page-footer__bottom">
-                        <div class="copyright">&copy;&nbsp;2019</div>
-                        <div class="page-footer-socials">
-                            <a href="https://vk.com/combo__breaker" target="_blank" class="page-footer-socials__item page-footer__vk"></a>
-                            <span class="page-footer-socials__item page-footer__18">18+</span></div>
-                        <div class="page-footer-lang">
-                            <a href="#" class="page-footer-lang__view">
+                    <div class="page-footer-lang">
+                        <a href="#" class="page-footer-lang__view">
+                            <i class="page-footer-lang__icon">
+                                <img src="img/svg/ru.svg" alt="Русский">
+                            </i>
+                        </a>
+                        <div class="page-footer-lang__list">
+                            <a class="page-footer-lang__item" href="#">
+                                <i class="page-footer-lang__icon">
+                                    <img src="img/svg/en.svg" alt="English">
+                                </i>
+                                English
+                            </a>
+                        </div>
+                    </div>
+                    <div class="page-footer-external">
+                        <a href="#" class="page-footer-external__link" target="_blank">
+                            <i class="page-footer-external__icon">
+                                <img src="img/svg/loftdog.svg" alt="">
+                            </i>
+                            Loftdog
+                        </a>
+                        <a href="#" class="page-footer-external__link" target="_blank">
+                            <i class="page-footer-external__icon">
+                                <img src="img/svg/igro.svg" alt="">
+                            </i>
+                            Игромаркет
+                        </a>
+                    </div>
+                    <a href="#" class="page-footer__dectop">Десктопная версия</a>
+                    <div class="page-footer__copyright">
+                        <div>
+                            &copy;<span class="page-footer__toggle" id="current_year_ru">2009</span> C-c-combo Breaker
+                            <script>
+                                var dteNow = new Date();
+                                var intYear = dteNow.getFullYear(),
+                                    innerYear = document.getElementById('current_year_ru');
+                                innerYear.innerHTML = intYear;
+                            </script>
+                        </div>
+                        <div class="page-footer__alert">18+</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <br>
+        <br>
+        <footer class="page-footer page-footer--eng">
+            <div class="container-fluid">
+                <div class="page-footer__wrap">
+                    <div class="page-footer__menu">
+                        <a class="page-footer__link" href="#">
+                            Contacts </a>
+                        <a class="page-footer__link" href="#">
+                            Terms of Service </a>
+                        <a class="page-footer__link" href="#">
+                            Privacy Policy </a>
+                    </div>
+                    <div class="page-footer-lang">
+                        <a href="#" class="page-footer-lang__view">
+                            <i class="page-footer-lang__icon">
+                                <img src="img/svg/en.svg" alt="English">
+                            </i>
+                        </a>
+                        <div class="page-footer-lang__list">
+                            <a class="page-footer-lang__item" href="#">
                                 <i class="page-footer-lang__icon">
                                     <img src="img/svg/ru.svg" alt="Русский">
                                 </i>
+                                Русский
                             </a>
-                            <div class="page-footer-lang__list">
-                                <a class="page-footer-lang__item" href="#">
-                                    <i class="page-footer-lang__icon">
-                                        <img src="img/svg/en.svg" alt="English">
-                                    </i>
-                                    English </a></div>
                         </div>
+                    </div>
+                    <a href="#" class="page-footer__dectop">Desktop version</a>
+                    <div class="page-footer__copyright">
+                        <div>
+                            &copy;<span class="page-footer__toggle" id="current_year_ru">2009</span> C-c-combo Breaker
+                            <script>
+                                var dteNow = new Date();
+                                var intYear = dteNow.getFullYear(),
+                                    innerYear = document.getElementById('current_year_ru');
+                                innerYear.innerHTML = intYear;
+                            </script>
+                        </div>
+                        <div class="page-footer__alert">18+</div>
                     </div>
                 </div>
             </div>
