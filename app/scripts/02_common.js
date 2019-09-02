@@ -114,7 +114,7 @@
             $.post($self.attr('href'));
             localStorage.setItem('cookie_accepted', true);
         }
-        $('.layout').removeClass('layout--cookie');
+        $('.page-header').removeClass('page-header--cookie');
         $('.cookies').remove();
     });
 

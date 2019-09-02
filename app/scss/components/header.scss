@@ -47,6 +47,13 @@
     :focus::-moz-placeholder          {color: #187ed5}
     :focus:-moz-placeholder           {color: #187ed5}
     :focus:-ms-input-placeholder      {color: #187ed5}
+
+    &.page-header--cookie{
+        top:0!important;
+        .page-search.open {
+            top: 73px;
+        }
+    }
 }
 
 

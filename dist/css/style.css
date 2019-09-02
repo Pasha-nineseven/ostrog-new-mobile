@@ -2921,6 +2921,10 @@ strong {
     color: #187ed5; }
   .page-header :focus:-ms-input-placeholder {
     color: #187ed5; }
+  .page-header.page-header--cookie {
+    top: 0 !important; }
+    .page-header.page-header--cookie .page-search.open {
+      top: 73px; }
 
 .top-logo {
   display: -ms-flexbox;
@@ -4505,7 +4509,6 @@ div.contents__title {
   margin: 7px 7px 7px 0; }
 
 .cookies {
-  position: fixed;
   width: 100%;
   padding: 7px 25px 7px 10px;
   background-color: #fff5ba;
