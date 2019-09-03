@@ -522,3 +522,32 @@ article .article__content div:not([class]) {
 .article__img img {
     width: 100%;
 }
+.page-header--cookie+.menu+.wrapper .page-content,
+.page-header--cookie+.contents+.menu+.wrapper .page-content{
+    padding-top: 119px;
+}
+
+
+.page-header--cookie+.contents+.menu .menu__list{
+    padding-top: 133px;
+}
+
+.page-header--cookie+.menu{
+    padding-top:73px;
+}
+
+.page-header--cookie.active{
+    background: transparent;
+    width: 100%;
+    border-bottom: 0;
+}
+
+.page-header--cookie.active>.container-fluid{
+    background: #024F9B;
+    width: 290px;
+    margin: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+.cookies {
+    color: #000;
+}
