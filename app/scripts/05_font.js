@@ -15,7 +15,24 @@
         ]
     };
     var UL_RANGE = ["list-1", "list0", "list1", "list2"];
-    var currSize = 1; // 0..3
+    var NAMESPACE = 'current-fontsize';
+    var currSize = 1 * (localStorage.getItem(NAMESPACE) || 1); // 0..3
+    if (currSize !== 1) {
+        adjustContent(currSize);
+    }
+
+    function adjustContent(currSize) {
+        Object.keys(FONT_SIZE_MAP).forEach(function (key) {
+            var nextSize = FONT_SIZE_MAP[key][currSize];
+            $(BASE_SELECTOR)
+            .find(key)
+            .css("font-size", nextSize);
+        });
+        $("ul").removeClass(UL_RANGE.join(' ')).addClass(UL_RANGE[currSize]);
+        $(".slider").each(function () {
+            $(this).slick("reinit");
+        });
+    }
 
     function cb(inc) {
         return debounce(function () {
@@ -28,16 +45,8 @@
                 currSize = 3;
                 return;
             }
-            Object.keys(FONT_SIZE_MAP).forEach(function (key) {
-                var nextSize = FONT_SIZE_MAP[key][currSize];
-                $(BASE_SELECTOR)
-                    .find(key)
-                    .css("font-size", nextSize);
-            });
-            $("ul").removeClass(UL_RANGE.join(' ')).addClass(UL_RANGE[currSize]);
-            $(".slider").each(function () {
-                $(this).slick("reinit");
-            });
+            adjustContent(currSize);
+            localStorage.setItem(NAMESPACE, currSize);
         });
     }
 
