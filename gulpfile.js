@@ -46,8 +46,8 @@ var scriptTask = function (src, dest, name) {
 gulp.task('scripts', function () {
     var common = [
         'app/libs/jquery/dist/jquery.min.js',
-        'app/libs/modernizr/modernizr.min.js',
-        'app/libs/flexibility/flexibility.js',
+        // 'app/libs/modernizr/modernizr.min.js',
+        // 'app/libs/flexibility/flexibility.js',
         'app/libs/scrollock/jquery.scrollLock.js',
         'app/scripts/01_variables.js',
         'app/scripts/02_common.js'

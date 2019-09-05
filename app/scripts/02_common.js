@@ -1,5 +1,5 @@
 (function () {
-    flexibility(document.documentElement);
+    // flexibility(document.documentElement);
 
     typeof reframe === "function" && reframe(document.querySelectorAll("iframe"));
 
