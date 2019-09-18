@@ -1720,6 +1720,30 @@ body.hidden_s {
     margin-right: -16px;
 }
 
+.content-item{
+	margin-bottom: 18px;
+	.content-item__img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.content-item--right{
+	.content-item__img{
+		float: left;
+		max-width: 50%;
+		padding-right: 15px;
+	}
+}
+
+.content-item--left{
+	.content-item__img{
+		float: right;
+		max-width: 50%;
+		padding-left: 15px;
+	}
+}
 
 
 @import "components/footer";

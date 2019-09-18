@@ -4829,6 +4829,23 @@ body.hidden_s {
   margin-left: -16px;
   margin-right: -16px; }
 
+.content-item {
+  margin-bottom: 18px; }
+  .content-item .content-item__img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+
+.content-item--right .content-item__img {
+  float: left;
+  max-width: 50%;
+  padding-right: 15px; }
+
+.content-item--left .content-item__img {
+  float: right;
+  max-width: 50%;
+  padding-left: 15px; }
+
 .page-footer {
   background: #262525;
   font-size: 14px;
